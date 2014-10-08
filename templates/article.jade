@@ -9,8 +9,10 @@ block prepend title
 
 block header
   include author
-  h1= page.title
-  p.author
+  div.avatar-wrap.animated.fadeInUp
+    div.nav-logo-article(onclick="location.href='/index.html'")
+  h1.animated.fadeInUp= page.title
+  p.author.animated.fadeInUp
     | #{ "Written by " }
     mixin author(page.metadata.author)
 
@@ -19,7 +21,23 @@ block content
     section.content!= typogr(page.html).typogrify()
 
 block prepend footer
-  div.nav
-    a(href=contents.index.url) « Full blog
+  div.nav-back
+    a(href='../../index.html') « Main
 
+block footer
+  section.copy
+    p #{ new Date().getFullYear() } by 
+      a(href='http://www.twitter.com/francamps') @francamps 
+      &mdash; powered by&nbsp;
+      a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+      //- please leave the "powered by" if you use the design       
 
+block wrapper
+  div#wrapper.content-detail
+    div.content-wrap
+      block header
+    div.content-wrap
+      block content          
+  footer
+    div.content-wrap      
+      block footer

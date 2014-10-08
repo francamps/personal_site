@@ -1,0 +1,349 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Correlations with SPI - Stories about patterns
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Quantitative and qualitative storytelling"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/animate-custom.css"/>
+    <script src="/js/underscore.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/soundcloudwidget.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+  </head>
+  <body class="article-detail">
+    <div id="wrapper" class="content-detail">
+      <div class="content-wrap">
+        <div class="avatar-wrap animated fadeInUp">
+          <div onclick="location.href='/index.html'" class="nav-logo-article"></div>
+        </div>
+        <h1 class="animated fadeInUp">Correlations with SPI</h1>
+        <p class="author animated fadeInUp">Written by <span class="author"><a href="mailto:undefined">Franc</a></span>
+        </p>
+      </div>
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>I’m really excited by the number of initiatives coming up these last couple of years that introduce serious measures of “externalities” into our old measures of social and economical success. One of the ones which has got more attention and is in my opinion one of the most completes is the <a href="http://www.socialprogressimperative.org">Social Progress Index</a>&nbsp;(<span class="caps">SPI</span>).</p>
+<p>The <span class="caps">SPI</span> is a combined measure of more than 50 indicators that looks to provide a complete and accurate picture of the social progress, well-being, opportunity and respect for human rights that a country or region provides to its&nbsp;citizens.</p>
+<p>If you’re into data visualization, pay attention to the way the <span class="caps">SPI</span> is displayed. Interactive Things, a fantastic studio in data visualization based in Zurich, Switzerland, designed a perfectly crafted interface to explore the conclusions and results of the&nbsp;SPI.</p>
+<p>And since the Social Progress Imperative (the organization behind <span class="caps">SPI</span>) publish all of their data, I thought it would be a good idea to use it and explore it a little, while using it for an introduction to d3.js tutorial from&nbsp;end-to-end.</p>
+<p>Here’s what we’re going to&nbsp;do:</p>
+<div>
+<div style="width: 30%; float: left">
+<select id="indexX">Select an index to compare (X)</select>
+<select id="indexY">Select an index to compare (Y)</select>
+<button id="go">Go</button>
+</div>
+
+<div style="float: left; width: 70%; display: block">
+<div id="chart" style="text-align: center"></div>
+</div>
+</div>
+
+<p>Let’s get to&nbsp;it.</p>
+<h4 id="the-svg">The&nbsp;<span class="caps">SVG</span></h4>
+<p>The start we need a place in the <span class="caps">DOM</span> where we’re going to insert our&nbsp;chart:</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"chart"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre>
+<p>Let’s start with some&nbsp;variables:</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> w = <span class="number">500</span>,
+    h = <span class="number">500</span>,
+    mg = {
+        top: <span class="number">10</span>,
+        right: <span class="number">10</span>,
+        bottom: <span class="number">50</span>,
+        left: <span class="number">50</span>
+    };
+</code></pre>
+<pre><code class="lang-javascript"><span class="comment">// Select placeholder and append an <span class="caps">SVG</span> with the right measures</span>
+<span class="keyword">var</span> svg = d3.select(<span class="string">"#chart"</span>)
+    .append(<span class="string">"svg:svg"</span>)
+    .attr(<span class="string">"width"</span>, w)
+    .attr(<span class="string">"height"</span>, h);
+</code></pre>
+<p>Add drop-down menus to select indicators from, and a button to apply&nbsp;changes.</p>
+<p>The&nbsp;<span class="caps">HTML</span>:</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">select</span> <span class="attribute">id</span>=<span class="value">"indexX"</span>&gt;</span>Select an index to compare (X)<span class="tag">&lt;/<span class="title">select</span>&gt;</span>
+<span class="tag">&lt;<span class="title">select</span> <span class="attribute">id</span>=<span class="value">"indexY"</span>&gt;</span>Select an index to compare (Y)<span class="tag">&lt;/<span class="title">select</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">id</span>=<span class="value">"go"</span>&gt;</span>Go<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+</code></pre>
+<p>The&nbsp;<span class="caps">JS</span>:</p>
+<pre><code class="lang-javascript"><span class="comment">// Select the drop-down menus and insert an option for each <span class="caps">SPI</span> mearsure</span>
+<span class="keyword">var</span> indexX = document.getElementById(<span class="string">"indexX"</span>),
+    indexY = document.getElementById(<span class="string">"indexY"</span>);
+
+indexs.forEach(<span class="function"><span class="keyword">function</span> <span class="params">(d)</span> {</span>
+    indexX.options.add(<span class="keyword">new</span> Option(d, d));
+    indexY.options.add(<span class="keyword">new</span> Option(d, d));
+});
+
+<span class="keyword">var</span> inX = indexs[<span class="number">1</span>],
+    inY = indexs[<span class="number">2</span>];
+
+indexX.addEventListener(<span class="string">"change"</span>, <span class="function"><span class="keyword">function</span> <span class="params">(d)</span> {</span>
+    inX = d.target.value;
+});
+indexY.addEventListener(<span class="string">"change"</span>, <span class="function"><span class="keyword">function</span> <span class="params">(d)</span> {</span>
+    inY = d.target.value;
+});
+</code></pre>
+<script>
+    d3.csv("spi2014.csv", function (csv) {
+
+        var w = 500,
+            h = 500,
+            mg = {
+                top: 10,
+                right: 10,
+                bottom: 50,
+                left: 50
+            },
+            countries,
+            box,
+            boxText,
+            boxW = 125,
+            boxH = 50,
+            xAxis, yAxis, yAxisDash, gXAxis, gYAxis, gYAxisDash;
+
+        var indexs = _.keys(csv[0]);
+
+        var indexX = document.getElementById("indexX"),
+            indexY = document.getElementById("indexY");
+
+        indexs.forEach(function (d) {
+            indexX.options.add(new Option(d, d));
+            indexY.options.add(new Option(d, d));
+        });
+
+        var inX = indexs[1],
+            inY = indexs[2];
+
+        indexX.addEventListener("change", function (d) {
+            inX = d.target.value;
+        });
+        indexY.addEventListener("change", function (d) {
+            inY = d.target.value;
+        });
+
+        // SVG
+console.log(inX, inY)
+        var svg = d3.select("#chart")
+            .append("svg:svg")
+            .attr("width", w)
+            .attr("height", h);
+
+        var bg = svg.append("rect")
+            .attr("width", w)
+            .attr("height", h)
+            .attr("x", 0)
+            .attr("y", 0)
+            .style("fill", "#f3f3f3");
+
+        var x = d3.scale.linear(),
+            y = d3.scale.linear();
+
+        var onHover = function (d) {
+            var mouseX = d3.mouse(this)[0],
+                mouseY = d3.mouse(this)[1],
+                x = function () {
+                    if (mouseX + 5 > (w - boxW)) {
+                        return mouseX - 5 - boxW;
+                    }
+                    return mouseX + 5;
+                };
+
+            box.style("opacity", 1)
+                .attr("x", x())
+                .attr("y", mouseY + 5)
+
+            boxText.style("opacity", 1)
+                .attr("x", x() + 5)
+                .attr("y", mouseY + 20)
+                .text(d["Country"]);
+        };
+
+        var offHover = function () {
+            box.style("opacity", 0);
+            boxText.style("opacity", 0);
+        };
+
+        var doAxis = function () {
+            // Define axis
+            xAxis = d3.svg.axis()
+                .orient("bottom")
+                .scale(x)
+                .ticks(6)
+                .tickSize(10)
+                .tickPadding(10);
+
+            // Define axis
+            yAxis = d3.svg.axis()
+                .orient("left")
+                .scale(y)
+                .ticks(6)
+                .tickSize(10)
+                .tickPadding(10);
+
+            yAxisDash = d3.svg.axis()
+                .orient("right")
+                .scale(y)
+                .ticks(6)
+                .tickSize(w - mg.left)
+                .tickFormat("");
+
+            // Append axis
+            gXAxis = svg.append("g")
+                .attr("class", "axisX axis")
+                .attr("transform", "translate(0," + (h - mg.bottom) + ")")
+                .style("color", "#888")
+                .style("font-family", "Arial")
+                .style("font-size", 11)
+                .call(xAxis);
+
+            gYAxis = svg.append("g")
+                .attr("class", "axisY axis")
+                .attr("transform", "translate(" + mg.left + ",0)")
+                .style("color", "#888")
+                .style("font-family", "Arial")
+                .style("font-size", 11)
+                .call(yAxis);
+
+            gYAxisDash = svg.append("g")
+                .attr("class", "axisY axis")
+                .attr("transform", "translate(" + mg.left + ",0)")
+                .style("stroke", "#ffffff")
+                .style("stroke-width", 2)
+                .call(yAxisDash);
+
+            // Style axis
+                gXAxis.select("path.domain")
+                    .style("fill", "none");
+                gYAxis.select("path.domain")
+                    .style("fill", "none");
+                gYAxisDash.select("path.domain")
+                    .style("fill", "none");
+        };
+
+        var doAxisTitles = function  () {
+            svg.append("text")
+                .attr("class", "XaxisTitle")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("transform", "translate(" + (mg.left / 3) + ", " + ((h - mg.bottom) / 2) + ")rotate(270)")
+                .style("text-anchor", "middle")
+                .style("color", "#888")
+                .style("font-family", "Arial")
+                .style("font-size", 11)
+                .text("EYS");
+
+            svg.append("text")
+                .attr("class", "YaxisTitle")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("transform", "translate(" + (mg.left + (w - mg.right - mg.left) / 2) + ", " + (h - 10) + ")")
+                .style("text-anchor", "middle")
+                .style("color", "#888")
+                .style("font-family", "Arial")
+                .style("font-size", 11)
+                .text("EYS");                
+        }
+
+        var doCountries = function () {
+            countries = svg.selectAll(".countries")
+                .data(csv)
+                .enter().append("circle")
+                .attr("data-country", function (d) { return d["country"]; })
+                .style("fill", "rgb(254, 200, 98)")
+                .style("stroke", "#888888")
+                .style("stroke-width", 1)
+                .style("cursor", "pointer")
+                .on("mouseover", onHover)
+                .on("mousemove", onHover)
+                .on("mouseout", offHover);
+        };
+
+        var doBox = function () {
+            box = svg.append("rect")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("rx", 5)
+                .attr("ry", 5)
+                .attr("width", boxW)
+                .attr("height", boxH)
+                .style("fill", "rgba(34,34,34,0.98)")
+                .style("opacity", 0);
+
+            boxText = svg.append("text")
+                .attr("class", "boxText")
+                .attr("x", 0)
+                .attr("y", 0)
+                .style("fill", "#e8e8e8")
+                .style("font-family", "Arial")
+                .style("font-size", 11)                
+                .text("");
+        };
+
+        var plot = function () {
+            var xLims = [d3.min(_.pluck(csv, inX)), d3.max(_.pluck(csv, inX))],
+                yLims = [d3.min(_.pluck(csv, inY)), d3.max(_.pluck(csv, inY))];
+
+            x.domain(xLims)
+                .range([mg.left, w - mg.right]),
+            y.domain(yLims)
+                .range([h - mg.bottom, mg.top]);
+
+            countries
+                .data(csv)
+                .transition()
+                .attr("cx", function (d) { return x(d[inX]); })
+                .attr("cy", function (d) { return y(d[inY]); })
+                .attr("r", 5);
+
+            gXAxis
+                .transition()
+                .call(xAxis);
+            gYAxis
+                .transition()
+                .call(yAxis);
+            gYAxisDash
+                .transition()
+                .call(yAxisDash);
+
+            d3.selectAll(".axisY .axisX line")
+                .style("fill", "none")
+                .style("stroke", "#232323")
+                .style("stroke-width", 1);
+
+            d3.select(".YaxisTitle").text(inY);
+            d3.select(".XaxisTitle").text(inX);
+        };
+
+        document.getElementById("go")
+            .addEventListener("click", plot);
+
+        doAxis();
+        doAxisTitles();
+        doCountries();
+        doBox();
+        plot();
+    });
+</script></section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">     
+        <div class="nav-back"><a href="../../index.html">« Main</a></div>
+        <section class="copy">
+          <p>2014 by <a href="http://www.twitter.com/francamps">@francamps </a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

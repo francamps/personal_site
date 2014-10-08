@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stories about patterns</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>Quantitative and qualitative storytelling</description>
+    <pubDate>Sat, 01 Feb 2014 19:00:00 -0500</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>A few notes on modular Javascript</title>
+      <link>http://localhost:8080/articles/Modular%20javascript/</link>
+      <pubDate>Sat, 01 Feb 2014 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/Modular%20javascript/</guid>
+      <author></author>
+      <description>&lt;p&gt;So when you start writing your first large applications, all the material and documentation you will find will tell you to write &lt;em&gt;modular&lt;/em&gt; code, that is, use the module pattern for absolutely everything. This, they say, will give you great control over private and public methods without polluting the global namespace.&lt;/p&gt;
+&lt;p&gt;Which is totally true and something that understanding early in the process will save you a lot of refactoring time and debugging nightmares.&lt;/p&gt;
+&lt;p&gt;However, it’s not immediately obvious to a person who’s learning to code how the structure needs to be layed out.&lt;/p&gt;
+&lt;p&gt;Here’s a module:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; MODULE = (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(myModule)&lt;/span&gt; {&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; _variable = &lt;span class=&quot;number&quot;&gt;45&lt;/span&gt;;
+
+    myModule.getVariable = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; {&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; _variable;
+    }
+
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; myModule;
+
+}(myModule || {}));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a module with one very clear function, make a non-public variable within the module accessible outside the &lt;a href=&quot;http://javascriptissexy.com/understand-javascript-closures-with-ease/&quot;&gt;closure&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;For convention, I noted the variable as private by using an leading underscore ‘_’.&lt;/p&gt;
+&lt;p&gt;Now, when you’re dealing with a site that is likely to need more than a handful of lines and likely to lean towards OOP as much as Javascript can get, dividing functionality in modules should be done from the start, no matter whether you’re using a third-party framework or creating your own.&lt;/p&gt;
+&lt;p&gt;In order to organize your code while you’re writing, the best you can do is to have every module in a different file, and use something like &lt;a href=&quot;http://www.requirejs.org&quot;&gt;RequireJS&lt;/a&gt; to orderly load them.&lt;/p&gt;
+&lt;p&gt;Here’s a list of the best articles I’ve found to understand how to organize and properly write modular code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.codethinked.com/preparing-yourself-for-modern-javascript-development&quot;&gt;Preparing yourself for modern JS development&lt;/a&gt;, by Justin Etheredge (&lt;strong&gt;Make sure to start here!&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jblotus.com/2013/01/13/common-javascript-gotchas/&quot;&gt;Common JS gotchas&lt;/a&gt;, by James Fuller&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html&quot;&gt;Javascript Module Pattern in depth&lt;/a&gt; (The most complete and “aha”-inducing article ever to be written about JS), by Ben cherry.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Correlations with SPI</title>
+      <link>http://localhost:8080/articles/social-progress-index/</link>
+      <pubDate>Fri, 24 Jan 2014 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/social-progress-index/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’m really excited by the number of initiatives coming up these last couple of years that introduce serious measures of “externalities” into our old measures of social and economical success. One of the ones which has got more attention and is in my opinion one of the most completes is the &lt;a href=&quot;http://www.socialprogressimperative.org&quot;&gt;Social Progress Index&lt;/a&gt; (SPI).&lt;/p&gt;
+&lt;p&gt;The SPI is a combined measure of more than 50 indicators that looks to provide a complete and accurate picture of the social progress, well-being, opportunity and respect for human rights that a country or region provides to its citizens.&lt;/p&gt;
+&lt;p&gt;If you’re into data visualization, pay attention to the way the SPI is displayed. Interactive Things, a fantastic studio in data visualization based in Zurich, Switzerland, designed a perfectly crafted interface to explore the conclusions and results of the SPI.&lt;/p&gt;
+&lt;p&gt;And since the Social Progress Imperative (the organization behind SPI) publish all of their data, I thought it would be a good idea to use it and explore it a little, while using it for an introduction to d3.js tutorial from end-to-end.&lt;/p&gt;
+&lt;p&gt;Here’s what we’re going to do:&lt;/p&gt;
+&lt;div&gt;
+&lt;div style=&quot;width: 30%; float: left&quot;&gt;
+&lt;select id=&quot;indexX&quot;&gt;Select an index to compare (X)&lt;/select&gt;
+&lt;select id=&quot;indexY&quot;&gt;Select an index to compare (Y)&lt;/select&gt;
+&lt;button id=&quot;go&quot;&gt;Go&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;float: left; width: 70%; display: block&quot;&gt;
+&lt;div id=&quot;chart&quot; style=&quot;text-align: center&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Let’s get to it.&lt;/p&gt;
+&lt;h4 id=&quot;the-svg&quot;&gt;The SVG&lt;/h4&gt;
+&lt;p&gt;The start we need a place in the DOM where we’re going to insert our chart:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;chart&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s start with some variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; w = &lt;span class=&quot;number&quot;&gt;500&lt;/span&gt;,
+    h = &lt;span class=&quot;number&quot;&gt;500&lt;/span&gt;,
+    mg = {
+        top: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;,
+        right: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;,
+        bottom: &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt;,
+        left: &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt;
+    };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Select placeholder and append an SVG with the right measures&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; svg = d3.select(&lt;span class=&quot;string&quot;&gt;&quot;#chart&quot;&lt;/span&gt;)
+    .append(&lt;span class=&quot;string&quot;&gt;&quot;svg:svg&quot;&lt;/span&gt;)
+    .attr(&lt;span class=&quot;string&quot;&gt;&quot;width&quot;&lt;/span&gt;, w)
+    .attr(&lt;span class=&quot;string&quot;&gt;&quot;height&quot;&lt;/span&gt;, h);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add drop-down menus to select indicators from, and a button to apply changes.&lt;/p&gt;
+&lt;p&gt;The HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;indexX&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Select an index to compare (X)&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;indexY&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Select an index to compare (Y)&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;go&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Go&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The JS:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Select the drop-down menus and insert an option for each SPI mearsure&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; indexX = document.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;indexX&quot;&lt;/span&gt;),
+    indexY = document.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;indexY&quot;&lt;/span&gt;);
+
+indexs.forEach(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(d)&lt;/span&gt; {&lt;/span&gt;
+    indexX.options.add(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Option(d, d));
+    indexY.options.add(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Option(d, d));
+});
+
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; inX = indexs[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;],
+    inY = indexs[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;];
+
+indexX.addEventListener(&lt;span class=&quot;string&quot;&gt;&quot;change&quot;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(d)&lt;/span&gt; {&lt;/span&gt;
+    inX = d.target.value;
+});
+indexY.addEventListener(&lt;span class=&quot;string&quot;&gt;&quot;change&quot;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(d)&lt;/span&gt; {&lt;/span&gt;
+    inY = d.target.value;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script&gt;
+    d3.csv(&quot;spi2014.csv&quot;, function (csv) {
+
+        var w = 500,
+            h = 500,
+            mg = {
+                top: 10,
+                right: 10,
+                bottom: 50,
+                left: 50
+            },
+            countries,
+            box,
+            boxText,
+            boxW = 125,
+            boxH = 50,
+            xAxis, yAxis, yAxisDash, gXAxis, gYAxis, gYAxisDash;
+
+        var indexs = _.keys(csv[0]);
+
+        var indexX = document.getElementById(&quot;indexX&quot;),
+            indexY = document.getElementById(&quot;indexY&quot;);
+
+        indexs.forEach(function (d) {
+            indexX.options.add(new Option(d, d));
+            indexY.options.add(new Option(d, d));
+        });
+
+        var inX = indexs[1],
+            inY = indexs[2];
+
+        indexX.addEventListener(&quot;change&quot;, function (d) {
+            inX = d.target.value;
+        });
+        indexY.addEventListener(&quot;change&quot;, function (d) {
+            inY = d.target.value;
+        });
+
+        // SVG
+
+        var svg = d3.select(&quot;#chart&quot;)
+            .append(&quot;svg:svg&quot;)
+            .attr(&quot;width&quot;, w)
+            .attr(&quot;height&quot;, h);
+
+        var bg = svg.append(&quot;rect&quot;)
+            .attr(&quot;width&quot;, w)
+            .attr(&quot;height&quot;, h)
+            .attr(&quot;x&quot;, 0)
+            .attr(&quot;y&quot;, 0)
+            .style(&quot;fill&quot;, &quot;#f3f3f3&quot;);
+
+        var x = d3.scale.linear(),
+            y = d3.scale.linear();
+
+        var onHover = function (d) {
+            var mouseX = d3.mouse(this)[0],
+                mouseY = d3.mouse(this)[1],
+                x = function () {
+                    if (mouseX + 5 &gt; (w - boxW)) {
+                        return mouseX - 5 - boxW;
+                    }
+                    return mouseX + 5;
+                };
+
+            box.style(&quot;opacity&quot;, 1)
+                .attr(&quot;x&quot;, x())
+                .attr(&quot;y&quot;, mouseY + 5)
+
+            boxText.style(&quot;opacity&quot;, 1)
+                .attr(&quot;x&quot;, x() + 5)
+                .attr(&quot;y&quot;, mouseY + 20)
+                .text(d[&quot;Country&quot;]);
+        };
+
+        var offHover = function () {
+            box.style(&quot;opacity&quot;, 0);
+            boxText.style(&quot;opacity&quot;, 0);
+        };
+
+        var doAxis = function () {
+            // Define axis
+            xAxis = d3.svg.axis()
+                .orient(&quot;bottom&quot;)
+                .scale(x)
+                .ticks(6)
+                .tickSize(10)
+                .tickPadding(10);
+
+            // Define axis
+            yAxis = d3.svg.axis()
+                .orient(&quot;left&quot;)
+                .scale(y)
+                .ticks(6)
+                .tickSize(10)
+                .tickPadding(10);
+
+            yAxisDash = d3.svg.axis()
+                .orient(&quot;right&quot;)
+                .scale(y)
+                .ticks(6)
+                .tickSize(w - mg.left)
+                .tickFormat(&quot;&quot;);
+
+            // Append axis
+            gXAxis = svg.append(&quot;g&quot;)
+                .attr(&quot;class&quot;, &quot;axisX axis&quot;)
+                .attr(&quot;transform&quot;, &quot;translate(0,&quot; + (h - mg.bottom) + &quot;)&quot;)
+                .style(&quot;color&quot;, &quot;#888&quot;)
+                .style(&quot;font-family&quot;, &quot;Arial&quot;)
+                .style(&quot;font-size&quot;, 11)
+                .call(xAxis);
+
+            gYAxis = svg.append(&quot;g&quot;)
+                .attr(&quot;class&quot;, &quot;axisY axis&quot;)
+                .attr(&quot;transform&quot;, &quot;translate(&quot; + mg.left + &quot;,0)&quot;)
+                .style(&quot;color&quot;, &quot;#888&quot;)
+                .style(&quot;font-family&quot;, &quot;Arial&quot;)
+                .style(&quot;font-size&quot;, 11)
+                .call(yAxis);
+
+            gYAxisDash = svg.append(&quot;g&quot;)
+                .attr(&quot;class&quot;, &quot;axisY axis&quot;)
+                .attr(&quot;transform&quot;, &quot;translate(&quot; + mg.left + &quot;,0)&quot;)
+                .style(&quot;stroke&quot;, &quot;#ffffff&quot;)
+                .style(&quot;stroke-width&quot;, 2)
+                .call(yAxisDash);
+
+            // Style axis
+                gXAxis.select(&quot;path.domain&quot;)
+                    .style(&quot;fill&quot;, &quot;none&quot;);
+                gYAxis.select(&quot;path.domain&quot;)
+                    .style(&quot;fill&quot;, &quot;none&quot;);
+                gYAxisDash.select(&quot;path.domain&quot;)
+                    .style(&quot;fill&quot;, &quot;none&quot;);
+        };
+
+        var doAxisTitles = function  () {
+            svg.append(&quot;text&quot;)
+                .attr(&quot;class&quot;, &quot;XaxisTitle&quot;)
+                .attr(&quot;x&quot;, 0)
+                .attr(&quot;y&quot;, 0)
+                .attr(&quot;transform&quot;, &quot;translate(&quot; + (mg.left / 3) + &quot;, &quot; + ((h - mg.bottom) / 2) + &quot;)rotate(270)&quot;)
+                .style(&quot;text-anchor&quot;, &quot;middle&quot;)
+                .style(&quot;color&quot;, &quot;#888&quot;)
+                .style(&quot;font-family&quot;, &quot;Arial&quot;)
+                .style(&quot;font-size&quot;, 11)
+                .text(&quot;EYS&quot;);
+
+            svg.append(&quot;text&quot;)
+                .attr(&quot;class&quot;, &quot;YaxisTitle&quot;)
+                .attr(&quot;x&quot;, 0)
+                .attr(&quot;y&quot;, 0)
+                .attr(&quot;transform&quot;, &quot;translate(&quot; + (mg.left + (w - mg.right - mg.left) / 2) + &quot;, &quot; + (h - 10) + &quot;)&quot;)
+                .style(&quot;text-anchor&quot;, &quot;middle&quot;)
+                .style(&quot;color&quot;, &quot;#888&quot;)
+                .style(&quot;font-family&quot;, &quot;Arial&quot;)
+                .style(&quot;font-size&quot;, 11)
+                .text(&quot;EYS&quot;);                
+        }
+
+        var doCountries = function () {
+            countries = svg.selectAll(&quot;.countries&quot;)
+                .data(csv)
+                .enter().append(&quot;circle&quot;)
+                .attr(&quot;data-country&quot;, function (d) { return d[&quot;country&quot;]; })
+                .style(&quot;fill&quot;, &quot;rgb(254, 200, 98)&quot;)
+                .style(&quot;stroke&quot;, &quot;#888888&quot;)
+                .style(&quot;stroke-width&quot;, 1)
+                .style(&quot;cursor&quot;, &quot;pointer&quot;)
+                .on(&quot;mouseover&quot;, onHover)
+                .on(&quot;mousemove&quot;, onHover)
+                .on(&quot;mouseout&quot;, offHover);
+        };
+
+        var doBox = function () {
+            box = svg.append(&quot;rect&quot;)
+                .attr(&quot;x&quot;, 0)
+                .attr(&quot;y&quot;, 0)
+                .attr(&quot;rx&quot;, 5)
+                .attr(&quot;ry&quot;, 5)
+                .attr(&quot;width&quot;, boxW)
+                .attr(&quot;height&quot;, boxH)
+                .style(&quot;fill&quot;, &quot;rgba(34,34,34,0.98)&quot;)
+                .style(&quot;opacity&quot;, 0);
+
+            boxText = svg.append(&quot;text&quot;)
+                .attr(&quot;class&quot;, &quot;boxText&quot;)
+                .attr(&quot;x&quot;, 0)
+                .attr(&quot;y&quot;, 0)
+                .style(&quot;fill&quot;, &quot;#e8e8e8&quot;)
+                .style(&quot;font-family&quot;, &quot;Arial&quot;)
+                .style(&quot;font-size&quot;, 11)                
+                .text(&quot;&quot;);
+        };
+
+        var plot = function () {
+            var xLims = [d3.min(_.pluck(csv, inX)), d3.max(_.pluck(csv, inX))],
+                yLims = [d3.min(_.pluck(csv, inY)), d3.max(_.pluck(csv, inY))];
+
+            x.domain(xLims)
+                .range([mg.left, w - mg.right]),
+            y.domain(yLims)
+                .range([h - mg.bottom, mg.top]);
+
+            countries
+                .data(csv)
+                .transition()
+                .attr(&quot;cx&quot;, function (d) { return x(d[inX]); })
+                .attr(&quot;cy&quot;, function (d) { return y(d[inY]); })
+                .attr(&quot;r&quot;, 5);
+
+            gXAxis
+                .transition()
+                .call(xAxis);
+            gYAxis
+                .transition()
+                .call(yAxis);
+            gYAxisDash
+                .transition()
+                .call(yAxisDash);
+
+            d3.selectAll(&quot;.axisY .axisX line&quot;)
+                .style(&quot;fill&quot;, &quot;none&quot;)
+                .style(&quot;stroke&quot;, &quot;#232323&quot;)
+                .style(&quot;stroke-width&quot;, 1);
+
+            d3.select(&quot;.YaxisTitle&quot;).text(inY);
+            d3.select(&quot;.XaxisTitle&quot;).text(inX);
+        };
+
+        document.getElementById(&quot;go&quot;)
+            .addEventListener(&quot;click&quot;, plot);
+
+        doAxis();
+        doAxisTitles();
+        doCountries();
+        doBox();
+        plot();
+    });
+&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Wishes for 2014</title>
+      <link>http://localhost:8080/articles/Wishes%20for%202014/</link>
+      <pubDate>Sun, 29 Dec 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/Wishes%20for%202014/</guid>
+      <author></author>
+      <description>&lt;ul&gt;
+&lt;li&gt;Adopt “joy and kindness” as my motto.&lt;/li&gt;
+&lt;li&gt;We’ll hear a lot more about B Corps.&lt;/li&gt;
+&lt;li&gt;We’ll collectively stop using the expression “change the world” in tech when it’s not accurate. In case you’re hesitating, it’s most likely not.&lt;/li&gt;
+&lt;li&gt;We will all make an extra effort to simply not have an opinion about how should anybody live her life.&lt;/li&gt;
+&lt;li&gt;Some new music will be amazing. &lt;/li&gt;
+&lt;li&gt;New companies will get me as excited as Kickstarter, Twitter or Kiva did a few years back.&lt;/li&gt;
+&lt;li&gt;We’ll be extra vigilant to point out when our behavior is reinforcing any type of discrimination.&lt;/li&gt;
+&lt;li&gt;Gender issues and sexism will see a real involvement from men.&lt;/li&gt;
+&lt;li&gt;What’s really not part of the sharing economy, but rather the renting economy (I’m looking at you AirBnB), will be called so and the actual sharing economy will be left alone. Just to be clear, AirBnB is totally awesome, but it’s just not called sharing if you’re paying.&lt;/li&gt;
+&lt;li&gt;Some company will emerge that challenges Apple and I’ll be able to reduce my absolute dependency to their products.&lt;/li&gt;
+&lt;li&gt;We will stop finding “tuna” under “vegetable sandwiches”.&lt;/li&gt;
+&lt;li&gt;The Spanish state will stop sucking big time and start behaving like a 21st century democracy good enough for European standards.&lt;/li&gt;
+&lt;li&gt;Tech media will start doing actual journalism and stop doing free publicity for the big players.&lt;/li&gt;
+&lt;li&gt;We’ll stop talking about Edward Snowden and Glenn Greenwald and actually start talking about privacy and accountability.&lt;/li&gt;
+&lt;li&gt;We’ll collectively stop using the word “hipster”.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Here's to joy and kindness.</title>
+      <link>http://localhost:8080/articles/thankfulness/</link>
+      <pubDate>Fri, 27 Dec 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/thankfulness/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;i&gt;This is just a ride.&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;And this one has been amazing. This one has been one of those of being close to the core of the mystery of life. &lt;/p&gt;
+&lt;p&gt;You have all been part of this. Some of you, because you’re so deeply entrenched into what my life is, that my life would just not be a thing without you. Some of you, I just recently met and I may know very little about you. But I still have a big deal to thank.&lt;/p&gt;
+&lt;p&gt;Those who just touched my life represent the largest, most beautiful mystery of what it means to be human. &lt;/p&gt;
+&lt;p&gt;The fact that there actually is a ‘us’. There is a ‘all of us’ that we all feel in some hidden corner of ourselves.&lt;/p&gt;
+&lt;p&gt;You may think you aren’t doing anything altruistic. But you are. You are bringing on your most limited resources, your energy, your time, your space, your youth, smiles, creative energy. You acknowledge joy and other people’s happiness, you acknowledge and promote togetherness. You have the belief that increasing that is a noble endeavor worth being pursued, the endeavor to make life a wonderful adventure and this world one worth living in.&lt;/p&gt;
+&lt;p&gt;You have made me smile, dance, work, talk, think, travel, wonder, kiss, have sex, watch, read, write, draw.&lt;/p&gt;
+&lt;p&gt;You have made me feel excited, loved, valued, marveled, challenged, lucky, excited, dumb, listened to, guilty, smart, confused and happy.&lt;/p&gt;
+&lt;p&gt;And this means you believe in joy. You believe in kindness. You believe that we collectively decided to make this world a better place.&lt;/p&gt;
+&lt;p&gt;For that, I thank you from the deepest corner of whatever it is that makes me me.&lt;/p&gt;
+&lt;p&gt;Keep on loving.&lt;/p&gt;
+&lt;p&gt;And bring on 2014.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>I rennovated my site</title>
+      <link>http://localhost:8080/articles/newest-site/</link>
+      <pubDate>Thu, 26 Dec 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/newest-site/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’ve been wanting to do a lot more writing for a long time. Last year I redesigned my personal site and I ambitiously started two blogs, one for visualization ideas and tutorials, interaction and so on, which I called Patterns, and another for more free creative writing, which I called No Patterns. Both were self-hosted Wordpress. I adjusted the visual design and hosted them on together with the rest of my main site so it could be experience without friction once you had accessed it. And while I think it worked for a bit, both for me as a writer and for people who would visit it, I decided I needed to lower the barrier even more to get myself to write regularly. Either that, or integrate writing so much into my site that it would be embarrassing to not update regularly.&lt;/p&gt;
+&lt;p&gt;I redesigned the whole site by using &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, a static site generator based on &lt;a href=&quot;http://jade-lang.com&quot;&gt;Jade&lt;/a&gt;, a Node templating engine. This allows me to have total control over my content and the architecture while being perfectly scalable and easy to maintain.&lt;/p&gt;
+&lt;p&gt;I also got rid of every social network widget or distraction. I wanted the reading experience to be as immersive as possible, even for the silliest things. I find myself more and more annoyed by distraction on the web, and wanted to work in the direction of cleaningness. If somebody really likes a text, tweeting the link is really not that difficult. And writing resonates with readers if they concentrate on it.&lt;/p&gt;
+&lt;p&gt;So what’s great is that, in addition, Wintersmith supports &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;. Markdown is great for a variety of reasons, it’s really readable while you write and edit and you can forget about blog plaforms or worrying about CSS once it’s live. Furthermore, it’s perfect to create articles in a consistent fashion from a regular text editor, which will make it much easier to add writing to my site and have it organize by the date just like a blog platform would do.&lt;/p&gt;
+&lt;p&gt;Markdown is great because it’s intuitive and extremely readable while editing. Instead of tags, you’d use stuff like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Some title
+==========
+A slightly less important title
+-------------------------------
+
+Paragraphs are separated
+by a blank line.
+
+Text attributes *italic*,
+**bold**, `monospace`.
+
+Shopping list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. apples
+  2. oranges
+  3. pears
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Some random things that happened in 2013</title>
+      <link>http://localhost:8080/articles/A%20year%20in%20review/</link>
+      <pubDate>Thu, 19 Dec 2013 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/A%20year%20in%20review/</guid>
+      <author></author>
+      <description>&lt;p&gt;I&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Met my nephew when he was 2 hours old. Such a trip.&lt;/li&gt;
+&lt;li&gt;Randomly ran into people in Mexico City.&lt;/li&gt;
+&lt;li&gt;Met incredible artists in New York, New Orleans, Minneapolis.&lt;/li&gt;
+&lt;li&gt;Survived a week of trash collectors strike in Madrid.&lt;/li&gt;
+&lt;li&gt;Experienced a syndrome of Stendhal in Minorca. Again.&lt;/li&gt;
+&lt;li&gt;Missed my first flight, in Minneapolis.&lt;/li&gt;
+&lt;li&gt;Danced off a snow blizzard in Brooklyn.&lt;/li&gt;
+&lt;li&gt;Started training capoeira seriously again.&lt;/li&gt;
+&lt;li&gt;Fell off my bike twice.&lt;/li&gt;
+&lt;li&gt;Started using Backbone.js.&lt;/li&gt;
+&lt;li&gt;Turned 29.&lt;/li&gt;
+&lt;li&gt;Moved from Bedstuy to Bedstuy, stayed in Bedstuy, loved Bedstuy more than ever.&lt;/li&gt;
+&lt;li&gt;Read books not written by Roberto Bolaño.&lt;/li&gt;
+&lt;li&gt;Saw the sun going down behind Manhattan dancing on a Brooklyn rooftop with a bunch of adorable human beings and I get goosebumps just by remembering how beautiful it was.&lt;/li&gt;
+&lt;li&gt;Saw a bear in the wild at like 15 feet from me.&lt;/li&gt;
+&lt;li&gt;Had a water pipe explode in the middle of the night in my room in Brooklyn and flood the whole thing.&lt;/li&gt;
+&lt;li&gt;Met beautiful unicorns and incredible people from all over the world.&lt;/li&gt;
+&lt;li&gt;Attended Eyeo, Visualized and ITP Camp and get mesmerized, inspired.&lt;/li&gt;
+&lt;li&gt;I ditched a suitcase full of clothing on an airport because they were gonna make me chose between rebooking (and repaying) or boarding without luggage. Yes, it was Delta. &lt;/li&gt;
+&lt;li&gt;Built a spandex screen where you could pretty much literally touch visuals, on openFrameworks.&lt;/li&gt;
+&lt;li&gt;Took things less personal. Will still be working on that one in 2014.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>When I leave New York</title>
+      <link>http://localhost:8080/articles/when-I-leave-NY/</link>
+      <pubDate>Tue, 09 Apr 2013 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/when-I-leave-NY/</guid>
+      <author></author>
+      <description>&lt;p&gt;When I leave New York, and I’ll find that new place for me, eventually I’ll look back at you in search of inspiration. And I’ll ask that memory to empower me, like you used to do with me.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When I leave New York, I’ll think of you and the density of talent that I could meet in a weekend, the impossible stories, your diversity of faces and goals, and ways of loving, ways of aspiring, a diversity so deep that is invisible, like there are no patterns.&lt;/p&gt;
+&lt;p&gt;When I leave New York I won’t remember how hard you were with me in the first days, how hard you are with your kids, how hard you are with those confused, with those who hesitate. I’ll remember how a feeling of rejection can be transformed into individual freedom and confidence, how everything is subjective and nobody really knows how to live.&lt;/p&gt;
+&lt;p&gt;When I leave my New York I’ll remember the excitement, the extremes, I’ll remember the obsessions, I’ll remember your photogenia and your vanity, I’ll remember your streets full of delusional dreams. I’ll remember your tough lessons, and how they worked, and I’ll see myself losing steam at times, and I’ll think of you and regain energy to keep going. ‘New York would not let me stop now’, I’ll tell myself.&lt;/p&gt;
+&lt;p&gt;When I leave New York I’ll remember how relationships were so volatile and I’ll try to imagine what it would have been like to be a single girl in New York.&lt;/p&gt;
+&lt;p&gt;When I leave New York, I will remember what it means to be hungry to do more, to go higher, to learn faster, what it means to be hungry for creation, for starting up, and what it means to be in the quest for something. I’ll remember what it means to be alone with your story to be written.&lt;/p&gt;
+&lt;p&gt;When I leave New York, everything will move slowly for a while, and I’ll remember my years with you as a fast sequence of snapshots, faces and places, and parties, and opportunities, and people to admire, and fucking assholes, and money, and weird-ass situations, and crazy people with nobody to help them, and my bike, and your smile on the subway, and hot coffee in a snowy winter Thursday, and dancing next to Gowanus canal on a sunny summer Sunday.&lt;/p&gt;
+&lt;p&gt;When I leave New York, I’ll remember the most important lesson you taught me: that everything is just another story, and you only need to tell it right.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/when-I-leave-NY/snownyc.png&quot; alt=&quot;Snow NYC&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>On working remotely</title>
+      <link>http://localhost:8080/articles/On%20working%20remotely/</link>
+      <pubDate>Mon, 11 Mar 2013 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/On%20working%20remotely/</guid>
+      <author></author>
+      <description>&lt;p&gt;I recently finished a project that set a milestone in my work life. From start to finish, from the moment I planned the idea to the moment I sent the final version of it, I didn’t see a face of the people I was working for. I was working from New York for a crowdfunding site named Goteo, that operates in Spain. Besides how engaged with the project I felt, working remotely has been an incredibly interesting experience, and has helped me reflect about the nature of work today and possibilities to come. I’ll do more of it.&lt;/p&gt;
+&lt;p&gt;Goteo is a crowdfunding site based in Spain, but it’s decentralized across the country. The team is formed by people working from Mallorca, Barcelona and Bilbao and decentralization is part of their DNA. They are incredibly passionate about what they do, and their plan is to create nodes of the site that operate autonomously from different locations and can have a better handle on local projects. They’re soon to add new nodes in Sevilla and Madrid. So it was the right type of organization to start en endeavor like this.&lt;/p&gt;
+&lt;p&gt;It worked so great that it made me think about what can be improved of the usual ways of working. Why are we so attached to a certain location when thinking about work? There are a whole lof of engineering and creative projects, and even some managerial tasks, that can be at least as well handed remotely as they can be on site. And especially in technology and some forms of art, there is no reason any more to keep forcing people to move from city to city every time they get a new job or start a new project.&lt;/p&gt;
+&lt;p&gt;For most of the projects at Knewton, we use collaborative tools that can be used from anywhere. GitHub, Google Drive, JIRA, Confluence. Most of the communication around projects happen via email or chat, even when collaborators are in the office. Communication is critical for every collaborative project (was I not being obvious enough?), but I would say that some of the collaborative tools we use may actually increase the effectivity of communication beyond the effectivity of physical meetings in some aspects.&lt;/p&gt;
+&lt;p&gt;Now, I’m not saying physical meetings are not important. Some ideas are better discussed in person and some meetings really do push projects forward. But, let’s face it, most don’t, especially after the definition phase. When the roadmap is clear, stop talking and start moving, and communicate about facts, not about ideas. There are more productive ways to merge ideas and lead discussions, keep each other accountable can work better with tools specifically designed for that purpose. Just think of applying version-control to every part of the design, building and implementation of a project.&lt;/p&gt;
+&lt;p&gt;For companies, allowing their employees to work remotely means a bigger ability to attract talent anywhere, and adapting better to the needs of their most valued workers. For employers, a more flexible situation means having access to a larger landscape of opportunities and being able to lead a life more adjusted with each one’s needs and aspirations.&lt;/p&gt;
+&lt;p&gt;From the human perspective, being able to work remotely can improve your productivity substantially, but also your quality of life. It allows you to have the schedule that better suits your own rhythms. I’m an extremely morning person (I know, right?), and not having to go to work until 9 or 10, and having to stay beyond 7 does not really work for me. Why would I waste my most productive hours?&lt;/p&gt;
+&lt;p&gt;In addition, it allows you to work from anywhere where your work is better, be it a coffee shop, a co-working space or home. My ideal choice is a coffee shop. I hate isolation, and I love the feeling of other people working in different things around me. A co-working space would work great, I assume, I’ve just never tried it. I don’t like working from home, but I know a lot of people do.&lt;/p&gt;
+&lt;p&gt;Of course, there are complications. There needs to be a clearly stated process for accountability, and an effort from all parts to keep very, very active the communication channel. The isolation factor doesn’t really work for everybody and some projects need a constant interaction. Also, some creativity processes need people to interact with similar inputs and ideas constantly. Generating new and useful ideas means putting together a lot of partially shared unfinished thoughts and reactions to the same inputs. This is difficult to mimic without physical interaction, but it is compensated by the easy access to more creative inputs from other sources.&lt;/p&gt;
+&lt;p&gt;Some time ago, I was living in Berlin and met a Canadian programmer who had just arrived to the city. He had just moved from Colombia, where he had spent some time living, and was planning to stay for a few months in the city. He had been working the whole time for employers that were never based where he was. That struck me so bad I promised myself to try at least to go in the same direction. It looks like it’s taking some time, but I’m getting slowly closer.&lt;/p&gt;
+&lt;p&gt;Working remotely does not mean that it doesn’t matter where you are working from. If I was not in NYC I would not have met the people I’ve met, I would not have come across certain opportunities and would have certainly made decisions differently. Where you physically are matters especially because you’re going to be in touch with ideas you would not see otherwise. It makes you interact with different mind sets, which is always good creativity.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>A documentary about creative coding</title>
+      <link>http://localhost:8080/articles/A%20documentary%20about%20creative%20coding/</link>
+      <pubDate>Fri, 01 Mar 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/A%20documentary%20about%20creative%20coding/</guid>
+      <author></author>
+      <description>&lt;div style=&quot;margin: 0 auto; width: 500px&quot;&gt;
+    &lt;iframe src=&quot;//player.vimeo.com/video/60735314&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href=&quot;http://vimeo.com/60735314&quot;&gt;Hello World! Processing&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/ultralab&quot;&gt;Ultra_Lab&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>On why NYC is not a hedonistic place</title>
+      <link>http://localhost:8080/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</link>
+      <pubDate>Wed, 16 Jan 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’ve interacted with work culture in several countries, but strongly interacted with it in three: Spain, Germany and the US, via their least representative cities, Barcelona, Berlin and New York.&lt;/p&gt;
+&lt;p&gt;New York is the least hedonistic of these places, and it’s not even close. First let me tell you that I love New York and I’m very thankful for a lot of things I’ve learned here. Hedonsim is not the only school of thought I enjoy, and so this is not supposed to be offensive. It’s just a fact.&lt;/p&gt;
+&lt;p&gt;Let me tell you why I think so.&lt;/p&gt;
+&lt;p&gt;By hedonistic I mean a place where people’s behavior is driven by pleasure, the sooner and more intense the better. Hedonism can be moderate, for example, when slowly spending your afternoon walking by your neighborhood with friends from coffee shop to book store, lie on a park, talk about life and so on, or more extreme, for example, anything related to club culture, drugs, uncommitted casual sex and other fun stuff.&lt;/p&gt;
+&lt;p&gt;New York does not thrive in neither. Of course, you can do any of those things, but the city is not configured so that leading any of those activities is easy nor status-increasing.&lt;/p&gt;
+&lt;p&gt;First of all, the city is optimized for work. You just have to take a look at the subway system to realize that subways are specifically designed to take people from where they live to work and back (from the outer boroughs to Manhattan and back, but not within borrough).&lt;/p&gt;
+&lt;p&gt;Second, there is a judgmental attitude about what you do with your life, what you work on, why you are interesting, and this pressure make people work harder than elsewhere. People that don’t have a clear professional goal are continuously sanctioned in conversations.&lt;/p&gt;
+&lt;p&gt;Third, there is a strong financial pressure. The fact that everything is expensive and difficult makes you want to make more money and if you’re not Warren Buffet, you’ll basically do that by working. More.&lt;/p&gt;
+&lt;p&gt;There are some aspects of hedonism that are present. Relationships are more volatile, so meeting new people is a constant. Making new friends is easier, but relationships are more superficial. This adds a notion of hedonism, but subtracts from the fact that deeper layers are never reached.&lt;/p&gt;
+&lt;p&gt;One common response that people have to counter the idea of NYC as non-hedonistic is the fact that you can get anything you want at any time you want. You can get Korean-Mexican food at 430 am on a Tuesday. That’s true. But that’s a commodity, and I consider commodities to be external to happiness, not a symptom or a part of it. That said, you can’t probably get a lot of your friends together at 430 am on a Tuesday because they work the day after (and we all have those important meetings) and also they live in the Upper West Side or Williamsburg and you’re in Prospect Heights and it’s not worth the trip. Solution: order Korean-Mexican food to make yourself happy.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>10 things europeans need to know before moving to New York</title>
+      <link>http://localhost:8080/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</link>
+      <pubDate>Mon, 14 Jan 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</guid>
+      <author></author>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;New York is NOT an hedonistic place.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;New York does sleep. Quite a lot, actually.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;New York is the ultimate accelerator of careers and passions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you can live without partying until the next morning, number 3 might be worth staying.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’re by yourself. You’ll realize you’ve been guided all your life. You’ll get enormous satisfaction in building your own narrative.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’ll be judged on what you do, on what you bring to the table. Own it, and you’ll find happiness in doing that, and maybe a sense of purpose you lacked before.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Your intimacy is yours. It is not expected that you share things that are truly personal. It is embarrassing and you will not get the feedback you expect. Your problems are yours and you’re expected to deal with them on your own.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Guys and girls are not friends. If you’re going to a show, get a coffee, eat together, have a drink or talk about something together, that’s a date.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You should buy yourself a bike as soon as possible. Not having to take the subway will change your life.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Never take it personal and move on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    <item>
+      <title>The strangely important case of the death of an introvert</title>
+      <link>http://localhost:8080/articles/Death%20of%20an%20introvert/</link>
+      <pubDate>Sat, 12 Jan 2013 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/Death%20of%20an%20introvert/</guid>
+      <author></author>
+      <description>&lt;p&gt;“Aaron dead. World wanderers, we have lost a wise elder. Hackers for right, we are one down. Parents all, we have lost a child. Let us weep.”&lt;/p&gt;
+&lt;p&gt;I’ve spent a good chunk of the past weekend obsessed with the case of Aaron Swartz. I couldn’t help to read every bit of news, every opinion, every blog post he wrote.&lt;/p&gt;
+&lt;p&gt;His story is a tragedy from any point of view. A young, uncannily brilliant individual whose irreverence scared the shit out of established powers. Since last year, he was being brutally prosecuted for allegedly illegally downloading millions of academic papers from the MIT system into his laptop, supposedly with the intention of distributing them freely.&lt;/p&gt;
+&lt;p&gt;Aaron was 26 years old when he took his life. He had struggled with depression for a very long time, and a process that was going to cost him millions of dollars that he didn’t have and potentially tens of years in jail pushed that depression to a limit.&lt;/p&gt;
+&lt;p&gt;Aaron Swartz was as committed to the idea of free information as one can be. He was prodigious from an insulting young age and he could have transformed his genius and drive into money with ease. But he wasn’t interested in that. All the projects he ever engaged in seemed to be for a greater, better idea he had of society and he only wanted to work to get there.
+aaronswartz&lt;/p&gt;
+&lt;p&gt;At this point in the century we have to understand one simple thing about young culture. It is not 20th century young culture. This century works differently. This means no more Sid Vicious, Jimi Hendrixs or Kurt Cobains. Music stopped creating ideological revolutionaries a long time ago. This does not mean that youth has stopped driving change and disrupting thought, culture and art. But we may have to look in places that are not music to find role models.&lt;/p&gt;
+&lt;p&gt;Although he took his own life for a combination of reasons we’ll never know about, there was a naivety and extreme idealism in his approach to life. Being idealism a sort of optimism, I can’t help but feeling a painful contradiction in Swartz case.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Death%20of%20an%20introvert/aaronswartz.jpg&quot; alt=&quot;Aaron Swartz&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

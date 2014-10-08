@@ -1,11 +1,12 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "name": "Stories about patterns",
+    "owner": "Franc Camps-Febrer",
+    "description": "Quantitative and qualitative storytelling"
   },
   "plugins": [
+    "wintersmith-less",
     "./plugins/paginator.coffee"
   ],
   "require": {
@@ -21,6 +22,6 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 1
   }
 }

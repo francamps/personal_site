@@ -1,29 +1,46 @@
 extends layout
 
+block navigation
+  header.nav-wrap.animated.fadeInUp
+    div.nav-top
+      div.nav-logo(onclick="location.href='/index.html'")
+    div.nav-tagline
+      h4 Franc.ly
+      span.tagline Coder and storyteller
+    nav
+      ul
+      li.nav-left
+        a(id="about" href="/bio.html") Who
+      li.nav-left
+        a(id="about" href="/work.html") What
+      li.nav-left
+        a(id="work" href="/nopatterns/page/0/index.html") Writing
+      - var article = env.helpers.getArticles(contents)[0]
+      li.nav-left.nav-left-indent
+        a(id="newest" href=article.url)= article.title
+
+block header
+  div.logo
+    h1= page.title
+    p.description= locals.description
+
 block content
   include author
+  article.article
+    section.content!= typogr(page.html).typogrify()
+  - var articles = env.helpers.getArticles(contents);
   each article in articles
-    article.article.intro
+    article.article.article-list.intro
       header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
         h2
           a(href=article.url)= article.title
+          span.date= moment.utc(article.date).format('DD. MMMM YYYY')          
       section.content
-        if article.intro.length > 0
-          | !{ typogr(article.intro).typogrify() }
+        !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
             a(href=article.url) more
-
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
-
-
-
+  
+block wrapper
+  div#wrapper
+    block navigation

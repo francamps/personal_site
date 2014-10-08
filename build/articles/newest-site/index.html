@@ -1,0 +1,72 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>I rennovated my site - Stories about patterns
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Quantitative and qualitative storytelling"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/animate-custom.css"/>
+    <script src="/js/underscore.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/soundcloudwidget.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+  </head>
+  <body class="article-detail">
+    <div id="wrapper" class="content-detail">
+      <div class="content-wrap">
+        <div class="avatar-wrap animated fadeInUp">
+          <div onclick="location.href='/index.html'" class="nav-logo-article"></div>
+        </div>
+        <h1 class="animated fadeInUp">I rennovated my site</h1>
+        <p class="author animated fadeInUp">Written by <span class="author">Franc</span>
+        </p>
+      </div>
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>I’ve been wanting to do a lot more writing for a long time. Last year I redesigned my personal site and I ambitiously started two blogs, one for visualization ideas and tutorials, interaction and so on, which I called Patterns, and another for more free creative writing, which I called No Patterns. Both were self-hosted Wordpress. I adjusted the visual design and hosted them on together with the rest of my main site so it could be experience without friction once you had accessed it. And while I think it worked for a bit, both for me as a writer and for people who would visit it, I decided I needed to lower the barrier even more to get myself to write regularly. Either that, or integrate writing so much into my site that it would be embarrassing to not update&nbsp;regularly.</p>
+<p>I redesigned the whole site by using <a href="http://wintersmith.io/">Wintersmith</a>, a static site generator based on <a href="http://jade-lang.com">Jade</a>, a Node templating engine. This allows me to have total control over my content and the architecture while being perfectly scalable and easy to&nbsp;maintain.</p>
+<p>I also got rid of every social network widget or distraction. I wanted the reading experience to be as immersive as possible, even for the silliest things. I find myself more and more annoyed by distraction on the web, and wanted to work in the direction of cleaningness. If somebody really likes a text, tweeting the link is really not that difficult. And writing resonates with readers if they concentrate on&nbsp;it.</p>
+<p>So what’s great is that, in addition, Wintersmith supports <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>. Markdown is great for a variety of reasons, it’s really readable while you write and edit and you can forget about blog plaforms or worrying about <span class="caps">CSS</span> once it’s live. Furthermore, it’s perfect to create articles in a consistent fashion from a regular text editor, which will make it much easier to add writing to my site and have it organize by the date just like a blog platform would&nbsp;do.</p>
+<p>Markdown is great because it’s intuitive and extremely readable while editing. Instead of tags, you’d use stuff like&nbsp;this:</p>
+<pre><code>Some title
+==========
+A slightly less important title
+-------------------------------
+
+Paragraphs are separated
+by a blank line.
+
+Text attributes *italic*,
+**bold**, `monospace`.
+
+Shopping list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. apples
+  2. oranges
+  3. pears
+</code></pre></section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">     
+        <div class="nav-back"><a href="../../index.html">« Main</a></div>
+        <section class="copy">
+          <p>2014 by <a href="http://www.twitter.com/francamps">@francamps </a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

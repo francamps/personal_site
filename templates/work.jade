@@ -1,0 +1,51 @@
+extends layout
+
+block navigation
+  header.nav-wrap.animated.fadeInUp
+    div.nav-top
+      div.nav-logo(onclick="location.href='/index.html'")
+    div.nav-tagline
+      h4 Franc.ly
+      span.tagline Coder and storyteller
+    nav
+      ul
+      li.nav-left
+        a(id="about" href="/bio.html") Who
+      li.nav-left
+        a(id="work" href="/work.html") What
+      //li.nav-left
+        //a(id="tech_writing" href="/patterns/index.html") Tech Writing
+      li.nav-left
+        a(id="life_writing" href="/nopatterns/index.html") Life Writing
+
+block header
+  div.logo
+    div.avatar-wrap
+      img.avatar(src="/css/images/logo2.png" width="30px" height="30px")
+    h1= page.title
+    p.description= locals.description
+
+block content
+  include author
+  article.article
+    section.content!= typogr(page.html).typogrify()
+
+block footer
+  section.copy
+    p #{ new Date().getFullYear() } by 
+      a(href='http://www.twitter.com/francamps') @francamps 
+      &mdash; powered by&nbsp;
+      a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+      //- please leave the "powered by" if you use the design       
+
+block wrapper
+  div#wrapper
+    block navigation
+    div#content-main
+      div.content-wrap
+        block header
+      div.content-wrap
+        block content
+  footer
+    div.content-wrap
+      block footer

@@ -1,0 +1,135 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'wintersmith-less',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'wintersmith-less', null ]
+5 verbose cache add name=undefined spec="wintersmith-less" args=["wintersmith-less",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'wintersmith-less',
+6 verbose parsed url   path: 'wintersmith-less',
+6 verbose parsed url   href: 'wintersmith-less' }
+7 silly lockFile ca6ef8a9-wintersmith-less wintersmith-less
+8 verbose lock wintersmith-less /Users/franc/.npm/ca6ef8a9-wintersmith-less.lock
+9 silly lockFile ca6ef8a9-wintersmith-less wintersmith-less
+10 silly lockFile ca6ef8a9-wintersmith-less wintersmith-less
+11 verbose addNamed [ 'wintersmith-less', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 56b45bed-wintersmith-less wintersmith-less@
+14 verbose lock wintersmith-less@ /Users/franc/.npm/56b45bed-wintersmith-less.lock
+15 silly addNameRange { name: 'wintersmith-less', range: '*', hasData: false }
+16 verbose request where is /wintersmith-less
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 1bae2ffaf7127d45
+19 verbose url raw /wintersmith-less
+20 verbose url resolving [ 'https://registry.npmjs.org/', './wintersmith-less' ]
+21 verbose url resolved https://registry.npmjs.org/wintersmith-less
+22 verbose request where is https://registry.npmjs.org/wintersmith-less
+23 info trying registry request attempt 1 at 20:36:53
+24 http GET https://registry.npmjs.org/wintersmith-less
+25 http 200 https://registry.npmjs.org/wintersmith-less
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Wed, 08 Oct 2014 00:36:55 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"32TYAEFVAF97CMIHRJH2YIS26"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '4445',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-jfk1024-JFK',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1412728615.144323,VS0,VE18',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'wintersmith-less', range: '*', hasData: true }
+28 silly addNameRange versions [ 'wintersmith-less',
+28 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '0.2.2', '0.2.3' ] ]
+29 verbose addNamed [ 'wintersmith-less', '0.2.3' ]
+30 verbose addNamed [ '0.2.3', '0.2.3' ]
+31 silly lockFile 131bd4bd-wintersmith-less-0-2-3 wintersmith-less@0.2.3
+32 verbose lock wintersmith-less@0.2.3 /Users/franc/.npm/131bd4bd-wintersmith-less-0-2-3.lock
+33 silly lockFile 4fe204af--less-wintersmith-less-0-2-3-tgz https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+34 verbose lock https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz /Users/franc/.npm/4fe204af--less-wintersmith-less-0-2-3-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz',
+35 verbose addRemoteTarball   '4aaae2abae1283031c6c8ab5fbf1a76c799f801d' ]
+36 info retry fetch attempt 1 at 20:36:55
+37 verbose fetch to= /var/folders/n9/r94rvlhx1kbbby7_c8q6cskc0000gn/T/npm-6661-sU2GM76D/registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+38 http GET https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+39 http 200 https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+40 silly lockFile 4fe204af--less-wintersmith-less-0-2-3-tgz https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+41 silly lockFile 4fe204af--less-wintersmith-less-0-2-3-tgz https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz
+42 silly lockFile 131bd4bd-wintersmith-less-0-2-3 wintersmith-less@0.2.3
+43 silly lockFile 131bd4bd-wintersmith-less-0-2-3 wintersmith-less@0.2.3
+44 silly lockFile 56b45bed-wintersmith-less wintersmith-less@
+45 silly lockFile 56b45bed-wintersmith-less wintersmith-less@
+46 silly resolved [ { name: 'wintersmith-less',
+46 silly resolved     version: '0.2.3',
+46 silly resolved     author: { name: 'Johan Nordberg', email: 'its@johan-nordberg.com' },
+46 silly resolved     description: 'less plugin for wintersmith',
+46 silly resolved     license: 'MIT',
+46 silly resolved     keywords: [ 'wintersmith', 'wintersmith-plugin', 'less' ],
+46 silly resolved     dependencies: { less: '~1.7.3', async: '~0.9.0', 'coffee-script': '~1.7.1' },
+46 silly resolved     _id: 'wintersmith-less@0.2.3',
+46 silly resolved     _shasum: '4aaae2abae1283031c6c8ab5fbf1a76c799f801d',
+46 silly resolved     _from: 'wintersmith-less@',
+46 silly resolved     _npmVersion: '1.4.9',
+46 silly resolved     _npmUser: { name: 'jnordberg', email: 'code@johan-nordberg.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '4aaae2abae1283031c6c8ab5fbf1a76c799f801d',
+46 silly resolved        tarball: 'http://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/wintersmith-less/-/wintersmith-less-0.2.3.tgz' } ]
+47 info install wintersmith-less@0.2.3 into /usr/local/lib
+48 info installOne wintersmith-less@0.2.3
+49 verbose lib/node_modules/wintersmith-less unbuild
+50 verbose tar unpack /Users/franc/.npm/wintersmith-less/0.2.3/package.tgz
+51 silly lockFile 79b5d188-ib-node-modules-wintersmith-less tar:///usr/local/lib/node_modules/wintersmith-less
+52 verbose lock tar:///usr/local/lib/node_modules/wintersmith-less /Users/franc/.npm/79b5d188-ib-node-modules-wintersmith-less.lock
+53 silly lockFile bb021dd9-ntersmith-less-0-2-3-package-tgz tar:///Users/franc/.npm/wintersmith-less/0.2.3/package.tgz
+54 verbose lock tar:///Users/franc/.npm/wintersmith-less/0.2.3/package.tgz /Users/franc/.npm/bb021dd9-ntersmith-less-0-2-3-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/wintersmith-less'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/wintersmith-less']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/wintersmith-less',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/wintersmith-less',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.4.0
+59 error command "node" "/usr/local/bin/npm" "install" "wintersmith-less" "-g"
+60 error cwd /Users/franc/Documents/Personal Site/site
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/wintersmith-less
+64 error fstream_path /usr/local/lib/node_modules/wintersmith-less
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/wintersmith-less'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
