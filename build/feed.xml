@@ -5,9 +5,37 @@
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
     <description>Quantitative and qualitative storytelling</description>
-    <pubDate>Sat, 01 Feb 2014 19:00:00 -0500</pubDate>
+    <pubDate>Sun, 12 Oct 2014 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Stupid projects</title>
+      <link>http://localhost:8080/articles/Stupid%20projects/</link>
+      <pubDate>Sun, 12 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/Stupid%20projects/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;em&gt;“Nothing useless can be truly beautiful.”&lt;/em&gt;
+&lt;em&gt;William Morris&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Projects that you take on your free time, as opposed to comissioned projects, can be of different sorts. Some are born with the goal to explore and research topics without a specific output to produce. Some are born with a purely artistic or even aesthetic intention. Others are totally an excuse to learn new tools, methods.&lt;/p&gt;
+&lt;p&gt;For this last type, I find it useful to imagine completely stupid and missionless projects by piling up pieces of things you’d like to learn.&lt;/p&gt;
+&lt;p&gt;Let’s say I have a serious project in mind. My goal involves using &lt;strong&gt;Twitter bots&lt;/strong&gt; that can publicize and create awareness on a social project (like stop-and-frisk). I’m doing some research looking for public data, looking for an angle in, but I haven’t quite figured out a way to make something useful for that cause. &lt;/p&gt;
+&lt;p&gt;Good is to step back and instead of staying in the seriousness when your point is not well defined, let’s do something to make sure all the pieces are well tied together. Let’s say I also want to learn a little bit of &lt;strong&gt;Node.js&lt;/strong&gt;. And just for the fun of it, let’s say I’ve been wanting to learn how to use a couple of features of the &lt;strong&gt;SoundCloud API&lt;/strong&gt;, to keep track of my Likes (because SoundCloud’s UI is beautiful but not very reliable) as well as explore some designy features of SVG.&lt;/p&gt;
+&lt;p&gt;All those things together don’t seem to make much sense, but I’m still going to come up with a way to link them as an excuse to learn. This is what is technically referred to as a &lt;em&gt;stupid&lt;/em&gt; project.&lt;/p&gt;
+&lt;p&gt;Stupid projects are the best because they put little pressure on being coherent, smart and making solid points, and allow you to focus on the technical aspects and make little tutorials out of it.&lt;/p&gt;
+&lt;p&gt;So here’s a list of the pieces I’m trying to pile up. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a Twitter bot using Node. &lt;a href=&quot;http://www.apcoder.com/2013/10/03/twitter-bot-20-minutes-node-js/&quot;&gt;Here&lt;/a&gt;‘s a super simple way to do that with a module called &lt;a href=&quot;https://github.com/ttezel/twit&quot;&gt;twit&lt;/a&gt;.&lt;ul&gt;
+&lt;li&gt;Apparently to create a Twitter account you need a unique email address (which, if you own a domain, shouldn’t be an issue) and a unique telephone number. Which is an issue, because I only own a cell phone (I know, weird right?). To give a twitter bot Write access via a centralized twitter account, follow &lt;a href=&quot;http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/&quot;&gt;this&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;I suspect this last thing allows for the &lt;em&gt;automation&lt;/em&gt; of creating twitter accounts (for noble missions like spam and fake accounts), but this is not my goal, so I won’t explore that for now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;My Node script will check once a day whether I have liked new shit on SoundCloud using &lt;a href=&quot;https://www.npmjs.org/package/soundcloud-node&quot;&gt;this module&lt;/a&gt;, and scrape that song down using a module called &lt;a href=&quot;https://github.com/dmotz/soundscrape&quot;&gt;SoundScrape&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Using a &lt;a href=&quot;https://github.com/sebpiq/node-web-audio-api&quot;&gt;Node implementation of the HTML5’s Web Audio API&lt;/a&gt;, I’ll load the data of the audio file, sample it and draw a Time Domain area chart as SVG, apply a blur effect to a point it’s totally unrecognizeable and tweet the image.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So stupid.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Stupid%20projects/soundscape.png&quot; alt=&quot;Soundscape&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>A few notes on modular Javascript</title>
       <link>http://localhost:8080/articles/Modular%20javascript/</link>
