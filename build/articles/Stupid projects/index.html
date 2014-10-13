@@ -1,0 +1,65 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Stupid projects - Stories about patterns
+    </title>
+    <link rel="alternate" href="http://www.franc.ly/feed.xml" type="application/rss+xml" title="Quantitative and qualitative storytelling"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/animate-custom.css"/>
+    <script src="/js/underscore.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/soundcloudwidget.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+  </head>
+  <body class="article-detail">
+    <div id="wrapper" class="content-detail">
+      <div class="content-wrap">
+        <div class="avatar-wrap animated fadeInUp">
+          <div onclick="location.href='/articles/page/0/index.html'" class="nav-logo-article"></div>
+        </div>
+        <h1 class="animated fadeInUp">Stupid projects</h1>
+        <p class="author animated fadeInUp">Written by <span class="author"><a href="mailto:undefined">Franc</a></span>
+        </p>
+      </div>
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p><em>“Nothing useless can be truly beautiful.”</em>
+—<strong>William&nbsp;Morris</strong></p>
+<p>Projects that you take on your free time, as opposed to comissioned projects, can be of different sorts. Some are born with the goal to explore and research topics without a specific output to produce. Some are born with a purely artistic or even aesthetic intention. Others are totally an excuse to learn new tools,&nbsp;methods.</p>
+<p>For this last type, I find it useful to imagine completely stupid and missionless projects by piling up pieces of things you’d like to&nbsp;learn.</p>
+<p>Let’s say I have a serious project in mind. My goal involves using <strong>Twitter bots</strong> that can publicize and create awareness on a social project (like stop-and-frisk). I’m doing some research looking for public data, looking for an angle in, but I haven’t quite figured out a way to make something useful for that&nbsp;cause. </p>
+<p>Good is to step back and instead of staying in the seriousness when your point is not well defined, let’s do something to make sure all the pieces are well tied together. Let’s say I also want to learn a little bit of <strong>Node.js</strong>. And just for the fun of it, let’s say I’ve been wanting to learn how to use a couple of features of the <strong>SoundCloud <span class="caps">API</span></strong>, to keep track of my Likes (because SoundCloud’s <span class="caps">UI</span> is beautiful but not very reliable) as well as explore some designy features of&nbsp;SVG.</p>
+<p>All those things together don’t seem to make much sense, but I’m still going to come up with a way to link them as an excuse to learn. This is what is technically referred to as a <em>stupid</em>&nbsp;project.</p>
+<p>Stupid projects are the best because they put little pressure on being coherent, smart and making solid points, and allow you to focus on the technical aspects and make little tutorials out of&nbsp;it.</p>
+<p>So here’s a list of the pieces I’m trying to pile&nbsp;up. </p>
+<ul>
+<li>Create a Twitter bot using Node. <a href="http://www.apcoder.com/2013/10/03/twitter-bot-20-minutes-node-js/">Here</a>‘s a super simple way to do that with a module called <a href="https://github.com/ttezel/twit">twit</a>.<ul>
+<li>Apparently to create a Twitter account you need a unique email address (which, if you own a domain, shouldn’t be an issue) and a unique telephone number. Which is an issue, because I only own a cell phone (I know, weird right?). To give a twitter bot Write access via a centralized twitter account, follow <a href="http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/">this</a>. </li>
+<li>I suspect this last thing allows for the <em>automation</em> of creating twitter accounts (for noble missions like spam and fake accounts), but this is not my goal, so I won’t explore that for&nbsp;now.</li>
+</ul>
+</li>
+<li>My Node script will check once a day whether I have liked new shit on SoundCloud using <a href="https://www.npmjs.org/package/soundcloud-node">this module</a>, and scrape that song down using a module called <a href="https://github.com/dmotz/soundscrape">SoundScrape</a>.</li>
+<li>Using a <a href="https://github.com/sebpiq/node-web-audio-api">Node implementation of the <span class="caps">HTML5</span>’s Web Audio API</a>, I’ll load the data of the audio file, sample it and draw a Time Domain area chart as <span class="caps">SVG</span>, apply a blur effect to a point it’s totally unrecognizeable and tweet the&nbsp;image.</li>
+</ul>
+<p>So&nbsp;stupid.</p>
+<p><img src="/articles/Stupid%20projects/soundscape.png" alt="Soundscape"></p>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">     
+        <div class="nav-back"><a href="../../index.html">« Main</a></div>
+        <section class="copy">
+          <p>2014 by <a href="http://www.twitter.com/francamps">@francamps </a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

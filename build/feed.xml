@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stories about patterns</title>
-    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:8080</link>
+    <atom:link href="http://www.franc.ly/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://www.franc.ly</link>
     <description>Quantitative and qualitative storytelling</description>
     <pubDate>Sun, 12 Oct 2014 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Stupid projects</title>
-      <link>http://localhost:8080/articles/Stupid%20projects/</link>
+      <link>http://www.franc.ly/articles/Stupid%20projects/</link>
       <pubDate>Sun, 12 Oct 2014 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/Stupid%20projects/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Stupid%20projects/</guid>
       <author></author>
       <description>&lt;p&gt;&lt;em&gt;“Nothing useless can be truly beautiful.”&lt;/em&gt;
-&lt;em&gt;William Morris&lt;/em&gt;&lt;/p&gt;
+—&lt;strong&gt;William Morris&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Projects that you take on your free time, as opposed to comissioned projects, can be of different sorts. Some are born with the goal to explore and research topics without a specific output to produce. Some are born with a purely artistic or even aesthetic intention. Others are totally an excuse to learn new tools, methods.&lt;/p&gt;
 &lt;p&gt;For this last type, I find it useful to imagine completely stupid and missionless projects by piling up pieces of things you’d like to learn.&lt;/p&gt;
 &lt;p&gt;Let’s say I have a serious project in mind. My goal involves using &lt;strong&gt;Twitter bots&lt;/strong&gt; that can publicize and create awareness on a social project (like stop-and-frisk). I’m doing some research looking for public data, looking for an angle in, but I haven’t quite figured out a way to make something useful for that cause. &lt;/p&gt;
@@ -38,9 +38,9 @@
     </item>
     <item>
       <title>A few notes on modular Javascript</title>
-      <link>http://localhost:8080/articles/Modular%20javascript/</link>
+      <link>http://www.franc.ly/articles/Modular%20javascript/</link>
       <pubDate>Sat, 01 Feb 2014 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/Modular%20javascript/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Modular%20javascript/</guid>
       <author></author>
       <description>&lt;p&gt;So when you start writing your first large applications, all the material and documentation you will find will tell you to write &lt;em&gt;modular&lt;/em&gt; code, that is, use the module pattern for absolutely everything. This, they say, will give you great control over private and public methods without polluting the global namespace.&lt;/p&gt;
 &lt;p&gt;Which is totally true and something that understanding early in the process will save you a lot of refactoring time and debugging nightmares.&lt;/p&gt;
@@ -71,9 +71,9 @@
     </item>
     <item>
       <title>Wishes for 2014</title>
-      <link>http://localhost:8080/articles/Wishes%20for%202014/</link>
+      <link>http://www.franc.ly/articles/Wishes%20for%202014/</link>
       <pubDate>Sun, 29 Dec 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/Wishes%20for%202014/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Wishes%20for%202014/</guid>
       <author></author>
       <description>&lt;ul&gt;
 &lt;li&gt;Adopt “joy and kindness” as my motto.&lt;/li&gt;
@@ -96,9 +96,9 @@
     </item>
     <item>
       <title>Here's to joy and kindness.</title>
-      <link>http://localhost:8080/articles/thankfulness/</link>
+      <link>http://www.franc.ly/articles/thankfulness/</link>
       <pubDate>Fri, 27 Dec 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/thankfulness/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/thankfulness/</guid>
       <author></author>
       <description>&lt;p&gt;&lt;i&gt;This is just a ride.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;And this one has been amazing. This one has been one of those of being close to the core of the mystery of life. &lt;/p&gt;
@@ -116,9 +116,9 @@
     </item>
     <item>
       <title>I rennovated my site</title>
-      <link>http://localhost:8080/articles/newest-site/</link>
+      <link>http://www.franc.ly/articles/newest-site/</link>
       <pubDate>Thu, 26 Dec 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/newest-site/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/newest-site/</guid>
       <author></author>
       <description>&lt;p&gt;I’ve been wanting to do a lot more writing for a long time. Last year I redesigned my personal site and I ambitiously started two blogs, one for visualization ideas and tutorials, interaction and so on, which I called Patterns, and another for more free creative writing, which I called No Patterns. Both were self-hosted Wordpress. I adjusted the visual design and hosted them on together with the rest of my main site so it could be experience without friction once you had accessed it. And while I think it worked for a bit, both for me as a writer and for people who would visit it, I decided I needed to lower the barrier even more to get myself to write regularly. Either that, or integrate writing so much into my site that it would be embarrassing to not update regularly.&lt;/p&gt;
 &lt;p&gt;I redesigned the whole site by using &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, a static site generator based on &lt;a href=&quot;http://jade-lang.com&quot;&gt;Jade&lt;/a&gt;, a Node templating engine. This allows me to have total control over my content and the architecture while being perfectly scalable and easy to maintain.&lt;/p&gt;
@@ -151,9 +151,9 @@ Numbered list:
     </item>
     <item>
       <title>Some random things that happened in 2013</title>
-      <link>http://localhost:8080/articles/A%20year%20in%20review/</link>
+      <link>http://www.franc.ly/articles/A%20year%20in%20review/</link>
       <pubDate>Thu, 19 Dec 2013 15:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/A%20year%20in%20review/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/A%20year%20in%20review/</guid>
       <author></author>
       <description>&lt;p&gt;I&lt;/p&gt;
 &lt;ul&gt;
@@ -183,9 +183,9 @@ Numbered list:
     </item>
     <item>
       <title>When I leave New York</title>
-      <link>http://localhost:8080/articles/when-I-leave-NY/</link>
+      <link>http://www.franc.ly/articles/when-I-leave-NY/</link>
       <pubDate>Tue, 09 Apr 2013 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/when-I-leave-NY/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/when-I-leave-NY/</guid>
       <author></author>
       <description>&lt;p&gt;When I leave New York, and I’ll find that new place for me, eventually I’ll look back at you in search of inspiration. And I’ll ask that memory to empower me, like you used to do with me.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -201,9 +201,9 @@ Numbered list:
     </item>
     <item>
       <title>On working remotely</title>
-      <link>http://localhost:8080/articles/On%20working%20remotely/</link>
+      <link>http://www.franc.ly/articles/On%20working%20remotely/</link>
       <pubDate>Mon, 11 Mar 2013 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/On%20working%20remotely/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/On%20working%20remotely/</guid>
       <author></author>
       <description>&lt;p&gt;I recently finished a project that set a milestone in my work life. From start to finish, from the moment I planned the idea to the moment I sent the final version of it, I didn’t see a face of the people I was working for. I was working from New York for a crowdfunding site named Goteo, that operates in Spain. Besides how engaged with the project I felt, working remotely has been an incredibly interesting experience, and has helped me reflect about the nature of work today and possibilities to come. I’ll do more of it.&lt;/p&gt;
 &lt;p&gt;Goteo is a crowdfunding site based in Spain, but it’s decentralized across the country. The team is formed by people working from Mallorca, Barcelona and Bilbao and decentralization is part of their DNA. They are incredibly passionate about what they do, and their plan is to create nodes of the site that operate autonomously from different locations and can have a better handle on local projects. They’re soon to add new nodes in Sevilla and Madrid. So it was the right type of organization to start en endeavor like this.&lt;/p&gt;
@@ -220,9 +220,9 @@ Numbered list:
     </item>
     <item>
       <title>A documentary about creative coding</title>
-      <link>http://localhost:8080/articles/A%20documentary%20about%20creative%20coding/</link>
+      <link>http://www.franc.ly/articles/A%20documentary%20about%20creative%20coding/</link>
       <pubDate>Fri, 01 Mar 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/A%20documentary%20about%20creative%20coding/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/A%20documentary%20about%20creative%20coding/</guid>
       <author></author>
       <description>&lt;div style=&quot;margin: 0 auto; width: 500px&quot;&gt;
     &lt;iframe src=&quot;//player.vimeo.com/video/60735314&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href=&quot;http://vimeo.com/60735314&quot;&gt;Hello World! Processing&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/ultralab&quot;&gt;Ultra_Lab&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
@@ -230,9 +230,9 @@ Numbered list:
     </item>
     <item>
       <title>On why NYC is not a hedonistic place</title>
-      <link>http://localhost:8080/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</link>
+      <link>http://www.franc.ly/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</link>
       <pubDate>Wed, 16 Jan 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/On%20why%20NYC%20is%20not%20a%20hedonistic%20place/</guid>
       <author></author>
       <description>&lt;p&gt;I’ve interacted with work culture in several countries, but strongly interacted with it in three: Spain, Germany and the US, via their least representative cities, Barcelona, Berlin and New York.&lt;/p&gt;
 &lt;p&gt;New York is the least hedonistic of these places, and it’s not even close. First let me tell you that I love New York and I’m very thankful for a lot of things I’ve learned here. Hedonsim is not the only school of thought I enjoy, and so this is not supposed to be offensive. It’s just a fact.&lt;/p&gt;
@@ -248,9 +248,9 @@ Numbered list:
     </item>
     <item>
       <title>10 things europeans need to know before moving to New York</title>
-      <link>http://localhost:8080/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</link>
+      <link>http://www.franc.ly/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</link>
       <pubDate>Mon, 14 Jan 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/10%20things%20europeans%20need%20to%20know%20about%20NYC/</guid>
       <author></author>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;New York is NOT an hedonistic place.&lt;/p&gt;
@@ -278,9 +278,9 @@ Numbered list:
     </item>
     <item>
       <title>The strangely important case of the death of an introvert</title>
-      <link>http://localhost:8080/articles/Death%20of%20an%20introvert/</link>
+      <link>http://www.franc.ly/articles/Death%20of%20an%20introvert/</link>
       <pubDate>Sat, 12 Jan 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/Death%20of%20an%20introvert/</guid>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Death%20of%20an%20introvert/</guid>
       <author></author>
       <description>&lt;p&gt;“Aaron dead. World wanderers, we have lost a wise elder. Hackers for right, we are one down. Parents all, we have lost a child. Let us weep.”&lt;/p&gt;
 &lt;p&gt;I’ve spent a good chunk of the past weekend obsessed with the case of Aaron Swartz. I couldn’t help to read every bit of news, every opinion, every blog post he wrote.&lt;/p&gt;
