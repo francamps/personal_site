@@ -5,9 +5,35 @@
     <atom:link href="http://www.franc.ly/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://www.franc.ly</link>
     <description>Quantitative and qualitative storytelling</description>
-    <pubDate>Sun, 12 Oct 2014 20:00:00 -0400</pubDate>
+    <pubDate>Mon, 13 Oct 2014 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Starting out with Arduino</title>
+      <link>http://www.franc.ly/articles/Starting%20out%20on%20Arduino/</link>
+      <pubDate>Mon, 13 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Starting%20out%20on%20Arduino/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’ve been looking for excuses to learn Arduino for a long time. My common regular work has barely anything to do with the physical world, and I am not an engineer, so I’ve been putting it off for an indefinite amount of time. &lt;/p&gt;
+&lt;p&gt;After seeing some of his projects and expertise, I asked &lt;a href=&quot;http://www.extrasleepy.com&quot;&gt;Andrew Kleindolph&lt;/a&gt;, an interaction designer and technology teacher I’ve had the pleasure to meet at SFPC, for some ways into it. &lt;/p&gt;
+&lt;p&gt;Here are some resources I’m looking into right now.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.adafruit.com/category/learn-arduino&quot;&gt;Do these starting with lesson 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing&quot;&gt;Connecting Arudino to Processing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From the main Arduino site: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://arduino.cc/en/Guide/HomePage&quot;&gt;Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://arduino.cc/en/Tutorial/HomePage&quot;&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;And here’s a &lt;a href=&quot;http://www.amazon.com/Arduino-Cookbook-Michael-Margolis/dp/1449313876/ref=sr_1_5?s=books&amp;amp;ie=UTF8&amp;amp;qid=1413298471&amp;amp;sr=1-5&amp;amp;keywords=Arduino&quot;&gt;good book&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more advanced stuff, &lt;a href=&quot;http://www.adafruit.com/product/1557&quot;&gt;this one&lt;/a&gt; seems to work great.&lt;/p&gt;
+&lt;p&gt;Now it’s only a matter of finding good stuff to do with it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Starting%20out%20on%20Arduino/arduinouno.jpg&quot; alt=&quot;Arduino Uno board&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Stupid projects</title>
       <link>http://www.franc.ly/articles/Stupid%20projects/</link>

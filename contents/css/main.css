@@ -57,7 +57,7 @@ body {
   font-family: 'Lora', serif;
   font-size: 21px;
   line-height: 1.52;
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   text-rendering: optimizeLegibility;
 }
 
@@ -124,6 +124,14 @@ ol, ul {
 }
 
 li {
+  margin-bottom: 0.5em;
+}
+
+li p {
+  margin-bottom: 0.5em; 
+}
+
+li ul {
   margin-bottom: 0.5em;
 }
 
