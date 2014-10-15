@@ -5,9 +5,37 @@
     <atom:link href="http://www.franc.ly/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://www.franc.ly</link>
     <description>Quantitative and qualitative storytelling</description>
-    <pubDate>Mon, 13 Oct 2014 20:00:00 -0400</pubDate>
+    <pubDate>Tue, 14 Oct 2014 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Overwhelming</title>
+      <link>http://www.franc.ly/articles/Overwhelming/</link>
+      <pubDate>Tue, 14 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Overwhelming/</guid>
+      <author></author>
+      <description>&lt;p&gt;Today I’m feeling a bit overwhelmed. By awesomeness, but definitely overwhelmed. At SFPC, we’ve been in touch with so many ideas, experiences, languages, that it is already all a bit difficult to absorb and process.&lt;/p&gt;
+&lt;p&gt;The hard part for me is not only that, but the fact that absorbing all these new inputs has my mind flying around like a butterfly from idea to idea, without really committing to any of them.&lt;/p&gt;
+&lt;p&gt;Maybe that’s what it’s supposed to be. I can acknowledge the value of focusing on learning, processing, exercising around a whole lot of ideas, getting your mind trained into thinking and reflecting about all of this. There is a whole lot of value I’m already feeling on thinking about systems in a playful, creative way. I find myself &lt;em&gt;unlearning&lt;/em&gt; the way I usually think about projects, and it feels very inspiring.&lt;/p&gt;
+&lt;p&gt;However, I feel a little anxious when I see my mind wandering so much and can sense the possibility of not even &lt;em&gt;producing&lt;/em&gt; anything solid at the end that I can present to myself as a tangible output.&lt;/p&gt;
+&lt;p&gt;I’ve been trying to list out what was realistic to expect from SFPC in those terms, and was not.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Unrealistic&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get proficient in any new language.&lt;/li&gt;
+&lt;li&gt;Produce one, two, three pieces of middle complexity to show, when you’ve never actually worked in that context.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Realistic&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get in touch with a whole lot of languages.&lt;/li&gt;
+&lt;li&gt;Learn to think conceptually about computing, about programming.&lt;/li&gt;
+&lt;li&gt;Get a hang of other angles to this (experience design, performance art, installations).&lt;/li&gt;
+&lt;li&gt;Produce a couple of proof of concepts of realms you never actually produced anything for.&lt;/li&gt;
+&lt;li&gt;Do a lot of writing.&lt;/li&gt;
+&lt;li&gt;Document artists, tools, career paths.&lt;/li&gt;
+&lt;li&gt;Make honest, intersting, genuine connections.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     <item>
       <title>Starting out with Arduino</title>
       <link>http://www.franc.ly/articles/Starting%20out%20on%20Arduino/</link>
