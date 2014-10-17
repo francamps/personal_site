@@ -5,9 +5,29 @@
     <atom:link href="http://www.franc.ly/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://www.franc.ly</link>
     <description>Quantitative and qualitative storytelling</description>
-    <pubDate>Wed, 15 Oct 2014 20:00:00 -0400</pubDate>
+    <pubDate>Thu, 16 Oct 2014 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Delegating, assiting, manipulating</title>
+      <link>http://www.franc.ly/articles/Alan%20Kay%20and%20the%20future%20that%20never%20was/</link>
+      <pubDate>Thu, 16 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Alan%20Kay%20and%20the%20future%20that%20never%20was/</guid>
+      <author></author>
+      <description>&lt;p&gt;I sometimes think of technology, in its broader sense, as all of those things humans do to delegate some of their abilities. &lt;/p&gt;
+&lt;p&gt;By delegating, by externalizing some of human’s innate abilities, we are abstracting them. Once these functions are abstracted, they can be manipulated. So in a way, by delegating abilities into devices or objects, technology allows us to abstract, redefine and manipulate our own abilities.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;http://web.archive.org/web/20120206001457/http://www.framejournal.net/interview/14/belinda-barnet&quot;&gt;this interview&lt;/a&gt;, Belinda Barnet provides the example of Plato, who opposed the introduction of books into the educational experience because it would ‘&lt;em&gt;implant forgetfulness in [men’s] souls&lt;/em&gt;‘. Indeed, by relying more on books, instead of memorizing thousands of verses, students most likely reduced their mnemonic capacities. The &lt;em&gt;need&lt;/em&gt; to memorize many facts was not there anymore. It delegated the retention of information to a device that could not only store enormous amounts of information, but also allowed to be distributed easier. &lt;/p&gt;
+&lt;p&gt;The common introduction of books probably hurt some aspects of thought and the learning experience as it was understood until that moment. By having a thought grow and brew in one’s subconscious, some hidden functions take place below the surface allowing the evolution of that thought. &lt;/p&gt;
+&lt;p&gt;Since scripture is a way of abstracting memory and communication, and extend these abilities beyond their time and space constraints, this allows all sorts of other manipulations. By this &lt;em&gt;simple&lt;/em&gt; (ha) trick, it allowed philosophy, literature, science and every realm of human thought to evolve. And the gains are easier to see than the loses.&lt;/p&gt;
+&lt;p&gt;What are some of the mental functions we are delegating now to computers? What are some of the processes we are allowing to happen in the future by manipulating abstractions of our own abilities? What is the way technology is designed and implemented today inflicting in the way we understand learning and the human experience?&lt;/p&gt;
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.scholastic.com/browse/article.jsp?id=5&quot;&gt;Face to Face: Alan Kay Still Waiting for the Revolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746&quot;&gt;Mindstorms&lt;/a&gt; by Seymour Papert&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=r36NNGzNvjo&quot;&gt;If you could have what you wanted, what would it be like?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     <item>
       <title>Letters</title>
       <link>http://www.franc.ly/articles/Letters/</link>
