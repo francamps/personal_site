@@ -23,4 +23,4 @@ I have an opinion.
 
 Send me a line to francamps.at.gmail.com or [tweet](http://www.twitter.com/francamps) at me.
 
-PS: I'm also a big electronic music aficionado, and I keep adding stuff I like to my [SoundCloud](../listening.html).
+PS: I'm also a big electronic music aficionado, and I keep adding stuff I like to my [SoundCloud](http://www.soundcloud.com/lucidsi/favorites).

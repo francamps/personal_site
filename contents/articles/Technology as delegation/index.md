@@ -1,5 +1,5 @@
 ---
-title: Delegating, assiting, manipulating
+title: Technology as delegation
 author: franc
 date: 2014-10-17
 template: article.jade
