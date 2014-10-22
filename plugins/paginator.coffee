@@ -62,6 +62,7 @@ module.exports = (env, callback) ->
     numPages = Math.ceil articles.length / options.perPage
 
     pages = []
+
     #for i in [0...numPages]
       #pageArticles = articles#.slice i * options.perPage, (i + 1) * options.perPage
       #pages.push new PaginatorPage i + 1, pageArticles
@@ -75,6 +76,7 @@ module.exports = (env, callback) ->
     # create the object that will be merged with the content tree (contents)
     # do _not_ modify the tree directly inside a generator, consider it read-only
     rv = {pages:{}}
+
     #for page in pages
       #rv.pages["#{ page.pageNum }.page"] = page # file extension is arbitrary
     rv['index.page'] = pages[0] # alias for first page

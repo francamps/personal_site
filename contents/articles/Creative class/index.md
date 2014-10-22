@@ -5,7 +5,7 @@ date: 2014-10-21
 template: article.jade
 ---
 
-I am very cautious with current use of the idea of the "creative class" by the establishment. I find it sometimes loaded with social engineering perversion, used as a substitute for true artistic experimentation and political involvement. 
+I am very cautious with the current use of the idea of the "creative class" by the establishment. I find it sometimes loaded with social engineering perversion, used as a substitute for true artistic experimentation and political involvement. 
 
 Creatives are artists that have made themselves digestible by "innovative" companies, therefore ditching anything coming with the spirit that is political or socially rebellious, and is one of the big factors that catalyzes gentrification. 
 
