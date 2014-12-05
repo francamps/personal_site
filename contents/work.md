@@ -16,6 +16,7 @@ Here are some samples of stuff I've done.
 *[Most of my daily work is not publicly shareable, so contact me for more examples or further explanations about my work.]*
 
 <div id="work_wrap" class="content-wrap" style="min-height: 600px">
+	<h2>Work</h2>
 	<div>
 		<div class="work_tile">
 			<div class="work_tile_top" style="background-image: url('/css/images/goteando.gif')"></div>
@@ -53,6 +54,17 @@ Here are some samples of stuff I've done.
 			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
 			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
 		</div>
+	</div>		
+		<h2>Digital art practice</h2>
+	<div>
+		<div class="work_tile">
+			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
+			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
+		</div>
+		<div class="work_tile">
+			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
+			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
+		</div>
 	</div>
 </div>
 
@@ -72,4 +84,15 @@ Here are some samples of stuff I've done.
 			$(this).css("opacity", 0)
 		})		*/
 	})();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36910924-1', 'auto');
+  ga('send', 'pageview');
+
 </script>

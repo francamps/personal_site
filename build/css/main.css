@@ -15,6 +15,10 @@
   margin-left: -2.3%;
 }
 
+#word_wrap > h2 {
+  margin-left: 2.3%;  
+}
+
 .work_tile {
   width: 31%;
   margin-left: 2.3%;
@@ -629,7 +633,7 @@ code.lang-markdown .bullet {
 
 @media (min-width: 1600px) {
   body { 
-    font-size: 25px;
+    font-size: 21px;
   }
   #wrapper {
     width: 60%;

@@ -1,34 +1,30 @@
 ---
 title: Emerging
 author: franc
-date: 2014-10-23
+date: 2014-10-31
 template: article.jade
 ---
 
-![Sturcturelessness](structureless.png)
+Reading Jo Freeman ["The Tyranny of Structurelessness"](http://www.historyisaweapon.com/defcon1/tyrstruct.html), portions of Alexander Galloway's _Protocol_ and other texts on decentralization, hierarchies and power structures for [Allison Burtch](http://allisonburtch.net/) workshop at SFPC, I think about recent democratic uprisings and the genesis of social movements that we've witnessed in recent years and their struggle with finding an articulate structure appropriate for the challenges of now.
 
-2008 financial crisis, and especially the economical policy implemented to mitigate by political bodies, revealed deep gaps in democracy quality in a lot of countries. These policies had specific effects for the south of Europe.
+![Sturcturelessness](structureless.png)_Structurelessness_
 
-Coincidentally, a wave fo technological social tools has been readily available for those movements that sprung after the crash.
+After the 2008 financial crisis, the economical policies implemented by political bodies to "mitigate" the effects of the crisis (as if it was some sort of weather disaster) revealed deep gaps in democracy quality in a lot of countries. These policies had specific effects in the south of Europe. In the case of Spain, these policies were heavily intertwined with steps taken by the political and business elites to maintain their position as _extractive caste_.
 
-Similarly as the protocols on the Internet provides the illusion of a horizontal, level field in communications that where individual hosts self-organize and hierarchical power structures of the past are no longer applicable
+Coincidentally, a wave of technological social tools has been readily available for those movements that sprung after the crash.
 
-, this is also an illusion that has affected social and political movements emerging in the recent times, and especially after 2008.
+Galloway's _Protocol_ is a good resource to understand TCP/IP protocols on the Internet as this illusion of a horizontal, leveled field in communications where the individual hosts self-organize and hierarchical power structures of the past are no longer applicable.
 
-![Informal sturcture](informal_structure.png)
+Analogously, communication tools have provided an illusion of structurelessness and horizontality in social and political movements emerging in the recent times that can act as a double-edged sword.
 
-social and political movements that gained relevance after the crash found themselves with a power for organization that could outdo the articulation of their discourse,
+These movements (Tahrir, 15M, Occupy) that gained relevance after the crash found themselves with a power for organization that could easily outdo the articulation of their discourse. An ongoing challenge they had to overcome was precisely the right structure that would allow this articulation and some capacity for execution without compromising equality principles that characterized their existence.
 
-Movements like Egyptian Revolution in 2011, the 15M Movement in Spain or OccupyWallStreet in the US spend a significant amount of energy and resources in defining the structure of their own movement as well as articulation a common discourse. 
+One of the powerful ideas on Freeman's writing is that collectives can _not not have a structure_. If there is no defined structure and process to question it, the movement is abandoning itself to an informal sturcture that replicate non-explicit power dynamics between members, which tend to be fertile field for demogagocial and brute-force sequestration of the movement. Revolutions that go awry tend to fail here, when the uprising outpaces the articulation of a functioning structure.
 
-I was involved in the 15M movement, though I also followed OWS quite closely. In the Spanish movement, the lack of political experience of a big part of its participants defined debates around structure.
+Movements like the Egyptian Revolution in 2011, the 15M Movement in Spain or OccupyWallStreet in the US spent a significant amount of energy and resources in defining the structure of their own movement as well as the articulation of a common discourse.
 
-Quickly, some of the most important goals of movement Participants in the movement perceived themselves as leaderless and even structureless at the start, and part of the goals of the movements was to articulate themselves.
+![Informal sturcture](informal_structure.png)_Informal structure_ 
 
-![Formal sturcture](formal_structure.png)
+I got somewhat involved in the 15M movement when I could go, and followed very closely from distance and participated when I could online. I also followed OWS quite closely. In the Spanish movement, the lack of political experience of a big part of its participants made the need for debates around structure much more explicit. In parallel to political debates, and attempts to articulate specific demands around a common discourse, the debate around structure, leardership and collective decision-making processes in the movement was (and still it) one of the most active. Some of these, particularly in Spain (with the PAH, Guanyem or Podemos), have chrystalized in new political entities that embody this constant readjustment and questioning the right balance between structure and equality.
 
-In parallel to political debates, and attempts to articulate specific demands around a common discourse, the debate around structure and leardership, collective decision-making in the movement was one of the most active. Some of the structure political entities emerging from that movement.
-
-The perception of corruption in the country's business and political elite made overcoming the lack of accountability and transparency one of the common debates. Therefore, the need for structures that made the wrongdoing of political and business elites accountable to citizens
-
-Although structurelessness never seemed to be a desirable goal, the debate about leaderlessness was central. Introducing structures and process to improve accountability and minimize the negative impact of an elite
+![Formal sturcture](formal_structure.png)_Formal structure_

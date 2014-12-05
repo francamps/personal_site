@@ -36,7 +36,7 @@ block content
           a(href=article.url)= article.title
           span.date= moment.utc(article.date).format('DD. MMMM YYYY')          
       section.content
-        !{ typogr(article.intro).typogrify() }
+//        !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
             a(href=article.url) more

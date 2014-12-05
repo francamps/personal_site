@@ -5,13 +5,95 @@
     <atom:link href="http://www.franc.ly/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://www.franc.ly</link>
     <description>Quantitative and qualitative storytelling</description>
-    <pubDate>Wed, 29 Oct 2014 20:00:00 -0400</pubDate>
+    <pubDate>Wed, 03 Dec 2014 19:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>A weekly review process</title>
+      <link>http://www.franc.ly/articles/Weekly%20review%20process/</link>
+      <pubDate>Wed, 03 Dec 2014 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Weekly%20review%20process/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’m implementing a personal weekly review process to help manage projects I’m working on, keep a log of ideas and delegate things out of my head, because I basically say yes to &lt;em&gt;way&lt;/em&gt; too many things. I’m literally scheduling time for this. To start, I’m putting 2h 30min a week.&lt;/p&gt;
+&lt;p&gt;This is based on a conversation with and an idea by &lt;a href=&quot;http://uncommonplaces.com/about-ida-benedetto/&quot;&gt;Ida Benedetto&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;process&quot;&gt;Process&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitor the projects you are working on.&lt;ul&gt;
+&lt;li&gt;List what you’re working on. &lt;/li&gt;
+&lt;li&gt;Review, update, throw on to backlog remove.&lt;/li&gt;
+&lt;li&gt;Detail tasks&lt;/li&gt;
+&lt;li&gt;Allocate time for documentation&lt;/li&gt;
+&lt;li&gt;What can I open-source about what I’m making?&lt;/li&gt;
+&lt;li&gt;Note personal goal on each of these projects (including actual work work)&lt;/li&gt;
+&lt;li&gt;Keep a log of where projects stand. Are all of these really simultaneously manageable?&lt;/li&gt;
+&lt;li&gt;Keep a three phase list&lt;ul&gt;
+&lt;li&gt;1 - This project will get work this week&lt;/li&gt;
+&lt;li&gt;2 - This project is in a planning phase&lt;/li&gt;
+&lt;li&gt;3 - This project is in a completely speculative phase. It may happen, most likely not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Keep your ideas in check.&lt;ul&gt;
+&lt;li&gt;10 min brainstorm: what have you been thinking on this last week? All sorts of ideas, personal, professional and all.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clean up after yourself, in both the physical and digital worlds.&lt;ul&gt;
+&lt;li&gt;Clean your mail.&lt;/li&gt;
+&lt;li&gt;Make sure email is at 0 too.&lt;/li&gt;
+&lt;li&gt;List things to do IRL: DMV, presents, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Manage mid-term calendar&lt;ul&gt;
+&lt;li&gt;Review your calendar - What’s happened in the last two weeks?&lt;/li&gt;
+&lt;li&gt;Review your calendar - What’s happening in the next three weeks?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Review your work process&lt;ul&gt;
+&lt;li&gt;Review the review process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Emerging</title>
+      <link>http://www.franc.ly/articles/Emerging/</link>
+      <pubDate>Thu, 30 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Emerging/</guid>
+      <author></author>
+      <description>&lt;p&gt;Reading Jo Freeman &lt;a href=&quot;http://www.historyisaweapon.com/defcon1/tyrstruct.html&quot;&gt;“The Tyranny of Structurelessness”&lt;/a&gt;, portions of Alexander Galloway’s &lt;em&gt;Protocol&lt;/em&gt; and other texts on decentralization, hierarchies and power structures for &lt;a href=&quot;http://allisonburtch.net/&quot;&gt;Allison Burtch&lt;/a&gt; workshop at SFPC, I think about recent democratic uprisings and the genesis of social movements that we’ve witnessed in recent years and their struggle with finding an articulate structure appropriate for the challenges of now.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Emerging/structureless.png&quot; alt=&quot;Sturcturelessness&quot;&gt;&lt;em&gt;Structurelessness&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After the 2008 financial crisis, the economical policies implemented by political bodies to “mitigate” the effects of the crisis (as if it was some sort of weather disaster) revealed deep gaps in democracy quality in a lot of countries. These policies had specific effects in the south of Europe. In the case of Spain, these policies were heavily intertwined with steps taken by the political and business elites to maintain their position as &lt;em&gt;extractive caste&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Coincidentally, a wave of technological social tools has been readily available for those movements that sprung after the crash.&lt;/p&gt;
+&lt;p&gt;Galloway’s &lt;em&gt;Protocol&lt;/em&gt; is a good resource to understand TCP/IP protocols on the Internet as this illusion of a horizontal, leveled field in communications where the individual hosts self-organize and hierarchical power structures of the past are no longer applicable.&lt;/p&gt;
+&lt;p&gt;Analogously, communication tools have provided an illusion of structurelessness and horizontality in social and political movements emerging in the recent times that can act as a double-edged sword.&lt;/p&gt;
+&lt;p&gt;These movements (Tahrir, 15M, Occupy) that gained relevance after the crash found themselves with a power for organization that could easily outdo the articulation of their discourse. An ongoing challenge they had to overcome was precisely the right structure that would allow this articulation and some capacity for execution without compromising equality principles that characterized their existence.&lt;/p&gt;
+&lt;p&gt;One of the powerful ideas on Freeman’s writing is that collectives can &lt;em&gt;not not have a structure&lt;/em&gt;. If there is no defined structure and process to question it, the movement is abandoning itself to an informal sturcture that replicate non-explicit power dynamics between members, which tend to be fertile field for demogagocial and brute-force sequestration of the movement. Revolutions that go awry tend to fail here, when the uprising outpaces the articulation of a functioning structure.&lt;/p&gt;
+&lt;p&gt;Movements like the Egyptian Revolution in 2011, the 15M Movement in Spain or OccupyWallStreet in the US spent a significant amount of energy and resources in defining the structure of their own movement as well as the articulation of a common discourse.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Emerging/informal_structure.png&quot; alt=&quot;Informal sturcture&quot;&gt;&lt;em&gt;Informal structure&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;I got somewhat involved in the 15M movement when I could go, and followed very closely from distance and participated when I could online. I also followed OWS quite closely. In the Spanish movement, the lack of political experience of a big part of its participants made the need for debates around structure much more explicit. In parallel to political debates, and attempts to articulate specific demands around a common discourse, the debate around structure, leardership and collective decision-making processes in the movement was (and still it) one of the most active. Some of these, particularly in Spain (with the PAH, Guanyem or Podemos), have chrystalized in new political entities that embody this constant readjustment and questioning the right balance between structure and equality.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/Emerging/formal_structure.png&quot; alt=&quot;Formal sturcture&quot;&gt;&lt;em&gt;Formal structure&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>John Whitney is getting me started on oF</title>
+      <link>http://www.franc.ly/articles/John%20Whitney%20is%20getting%20me%20started%20on%20oF/</link>
+      <pubDate>Wed, 29 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/John%20Whitney%20is%20getting%20me%20started%20on%20oF/</guid>
+      <author></author>
+      <description>&lt;p&gt;John Whitney was considered one of the fathers of computer animation. His early work is almost purely mechanical, literally, and he set the foundations for more digital work later on. Most of his stuff is slightly psychedelic &lt;/p&gt;
+&lt;p&gt;At an animation workshop at SFPC on openFrameworks with &lt;a href=&quot;http://thesystemis.com/&quot;&gt;Zach Lieberman&lt;/a&gt;, we’ve reviewed some of Whitney’s work and taken it as inspiration for some experiments. Since I’m exploring particle systems and swarm behavior, this is a piece I was looking into.&lt;/p&gt;
+&lt;div style=&quot;width: 500px; margin: 0 auto; margin-bottom: 1.52em&quot;&gt;&lt;iframe src=&quot;//player.vimeo.com/video/110486548&quot; width=&quot;500&quot; height=&quot;369&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;And here’s a still of the original I was trying to replicate.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./original.jpeg&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Ursula K Leguin on Utopia</title>
       <link>http://www.franc.ly/articles/Ursula%20K%20Leguin%20on%20Utopia/</link>
-      <pubDate>Wed, 29 Oct 2014 20:00:00 -0400</pubDate>
+      <pubDate>Mon, 27 Oct 2014 20:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://www.franc.ly/articles/Ursula%20K%20Leguin%20on%20Utopia/</guid>
       <author></author>
       <description>&lt;p&gt;Here are some intersting quotes from some readings we’ve been doing by Ursula K LeGuin’s. &lt;/p&gt;
@@ -28,7 +110,7 @@
 &lt;p&gt;“The purer, the more euclidean the reason that builds a utopia, the greater its self-destructive capacity. I submit that our lack of faith in the benevolence of reason as the controlling power is well founded.”&lt;/p&gt;
 &lt;p&gt;“Lévi-Strauss [makes the distinction][…] between the &lt;em&gt;hot&lt;/em&gt; societies, which have appeared since the Neolithic Revolution, and in which &lt;em&gt;differentiations between castes and between classes are urged without cease, in order that social change and energy may be extracted from them&lt;/em&gt;, and the &lt;em&gt;cold&lt;/em&gt; societies, self-limited, whose historical temperature is pretty near zero.”&lt;/p&gt;
 &lt;p&gt;[Talking about &lt;em&gt;The Dispossessed&lt;/em&gt;] “Anarchism rejects the identification of civilization with the state, and the identification of power with coercion; against the inherent violence of the &lt;em&gt;hot&lt;/em&gt; society it asserts the value of such antisocial behavior as the general refusal of women to bear arms in war; and other coyote devices.” &lt;/p&gt;
-&lt;p&gt;[This is mine: What is she talking about? Women in anarchist movements are leaders and more fighters than in any other political movement. I must be misunderstanding what she meant with this paragraph.]&lt;/p&gt;
+&lt;p&gt;[This is mine: What is she talking about? Women are more prominent leaders, as well as fighters, in anarchist movements than in any other political movement (see Spanish Revolution of 1936). I must be misunderstanding what she meant with this paragraph.]&lt;/p&gt;
 &lt;p&gt;“They are assailed by too many new things ever to find the depths in the old before it has gone by. The rush of life past them they call progress, though it is too rapid for them to move with it. Man remains the same, baffled and astonished, with a heap of new things around him but gone before he knows them. Men may live many sorts of lives, and this they call &lt;em&gt;opportunity&lt;/em&gt;,and believe opportunity good without ever examining any one of those lives to know if it is good. We have fewer ways of life and most of us never know but one.” 
 &lt;em&gt;Lord Dorn&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;“I don’t think we’re ever going to get to utopia again by going forward, but only roundabout or sideways.”&lt;/p&gt;
@@ -37,42 +119,33 @@
 </description>
     </item>
     <item>
-      <title>Emerging</title>
-      <link>http://www.franc.ly/articles/Emerging/</link>
-      <pubDate>Wed, 22 Oct 2014 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://www.franc.ly/articles/Emerging/</guid>
-      <author></author>
-      <description>&lt;p&gt;&lt;img src=&quot;/articles/Emerging/structureless.png&quot; alt=&quot;Sturcturelessness&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2008 financial crisis, and especially the economical policy implemented to mitigate by political bodies, revealed deep gaps in democracy quality in a lot of countries. These policies had specific effects for the south of Europe.&lt;/p&gt;
-&lt;p&gt;Coincidentally, a wave fo technological social tools has been readily available for those movements that sprung after the crash.&lt;/p&gt;
-&lt;p&gt;Similarly as the protocols on the Internet provides the illusion of a horizontal, level field in communications that where individual hosts self-organize and hierarchical power structures of the past are no longer applicable&lt;/p&gt;
-&lt;p&gt;, this is also an illusion that has affected social and political movements emerging in the recent times, and especially after 2008.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/Emerging/informal_structure.png&quot; alt=&quot;Informal sturcture&quot;&gt;&lt;/p&gt;
-&lt;p&gt;social and political movements that gained relevance after the crash found themselves with a power for organization that could outdo the articulation of their discourse,&lt;/p&gt;
-&lt;p&gt;Movements like Egyptian Revolution in 2011, the 15M Movement in Spain or OccupyWallStreet in the US spend a significant amount of energy and resources in defining the structure of their own movement as well as articulation a common discourse. &lt;/p&gt;
-&lt;p&gt;I was involved in the 15M movement, though I also followed OWS quite closely. In the Spanish movement, the lack of political experience of a big part of its participants defined debates around structure.&lt;/p&gt;
-&lt;p&gt;Quickly, some of the most important goals of movement Participants in the movement perceived themselves as leaderless and even structureless at the start, and part of the goals of the movements was to articulate themselves.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/Emerging/formal_structure.png&quot; alt=&quot;Formal sturcture&quot;&gt;&lt;/p&gt;
-&lt;p&gt;In parallel to political debates, and attempts to articulate specific demands around a common discourse, the debate around structure and leardership, collective decision-making in the movement was one of the most active. Some of the structure political entities emerging from that movement.&lt;/p&gt;
-&lt;p&gt;The perception of corruption in the country’s business and political elite made overcoming the lack of accountability and transparency one of the common debates. Therefore, the need for structures that made the wrongdoing of political and business elites accountable to citizens&lt;/p&gt;
-&lt;p&gt;Although structurelessness never seemed to be a desirable goal, the debate about leaderlessness was central. Introducing structures and process to improve accountability and minimize the negative impact of an elite&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>A life inventory</title>
       <link>http://www.franc.ly/articles/A%20life%20inventory/</link>
       <pubDate>Tue, 21 Oct 2014 20:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://www.franc.ly/articles/A%20life%20inventory/</guid>
       <author></author>
-      <description>&lt;p&gt;I don’t generally celebrate my birthday. Although I enjoy other people’s parties, I feel self-conscious throwing a party myself, and don’t tell anyone. Some people remember sometimes, and it’s nice, but it tends to go quite unnoticed, which I’m totally ok with. I’m actually enjoying getting older, but throwing a party for myself doesn’t feel representative of what I feel when &lt;code&gt;myAge++&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;I do, however, tend to find meaning in rituals and I like stories, and since I’m turning 30 now, I’ve been telling people a bit more than normal.&lt;/p&gt;
-&lt;p&gt;Also, I’ve had a blast in my 20s. They’ve been good with me, and I’ve been blessed to be able to go through all sorts of adventures and experiences, too many to enumerate here.&lt;/p&gt;
-&lt;p&gt;So instead of celebrating my 30th birthday, I felt like celebrating my 20s. And instead of celebrating by receiving a party, or by receiving presents, and since at this point I have people scattered all over the world, I decided to celebrate by doing a bit of a life inventory.&lt;/p&gt;
+      <description>&lt;p&gt;I don’t generally celebrate my birthday. Although I enjoy other people’s parties, I feel self-conscious throwing a party for myself, and don’t tell anyone. Some people remember sometimes, and it’s nice, but it tends to go quite unnoticed, which I’m totally ok with. I’m actually enjoying getting older, but throwing a party for myself doesn’t feel representative of what I feel when &lt;code&gt;myAge++&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I do, however, tend to find meaning in rituals and I like stories, and since I’m turning 30 now, I’ve been telling people about it a bit more than normal.&lt;/p&gt;
+&lt;p&gt;Also, I’ve had a blast in my 20s. The decade has been really good with me, and I’ve been blessed with all sorts of adventures and experiences, too many to enumerate here.&lt;/p&gt;
+&lt;p&gt;So instead of celebrating my 30th birthday, I felt like celebrating my 20s. Instead of celebrating by receiving a party, or by receiving presents, and since at this point I have people scattered all over the world, I decided to celebrate by doing a bit of a life inventory.&lt;/p&gt;
 &lt;p&gt;The idea was to go through a list of all the people who have impacted my life in one way or another, and send a letter giving thanks. It feels much more correct to celebrate by thanking people who’ve made my 20s happen than thanking myself for, huh, existing?&lt;/p&gt;
 &lt;p&gt;It’s been an interesting exercise. I couldn’t write to &lt;em&gt;everybody&lt;/em&gt;, it would have been a monumental task. I tried to be honest with myself and write not only to people who I really felt like celebrating together, but also to people who I felt a bit uncomfortable with, people who did impact my life even when I did not impact theirs in any meaningful way. &lt;/p&gt;
 &lt;p&gt;And finally, I wrote a letter to my nephew to be kept unopened until the day he turns 20, or November 11th 2033, with some of the lessons I’ve learned during these 10 amazing years.&lt;/p&gt;
 &lt;p&gt;Life is good.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/articles/A%20life%20inventory/letters.jpg&quot; alt=&quot;Letters!&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Commodified socialism for the wealthy</title>
+      <link>http://www.franc.ly/articles/Commodified%20socialism%20for%20the%20wealthy/</link>
+      <pubDate>Mon, 20 Oct 2014 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://www.franc.ly/articles/Commodified%20socialism%20for%20the%20wealthy/</guid>
+      <author></author>
+      <description>&lt;p&gt;I am very cautious with the current use of the idea of the “creative class” by the establishment. I find it sometimes loaded with social engineering perversion, used as a substitute for true artistic experimentation and political involvement. &lt;/p&gt;
+&lt;p&gt;Creatives are artists that have made themselves digestible by “innovative” companies, therefore ditching anything coming with the spirit that is political or socially rebellious, and is one of the big factors that catalyzes gentrification. &lt;/p&gt;
+&lt;p&gt;Cities and real estate development agencies use “creative class” because it sounds better than “white young college-educated people willing to work for little money under the promise of artistic fulfillment”. They (we) are indeed white, culturally upper-middle class in a precarious financial situation, which is a different manifestation of a class of the ones traditionally thought of, but one class division after all that comes with a very specific set of demons.&lt;/p&gt;
+&lt;p&gt;If anything, and I talk about NY which is the only thing I know, nightlife is becoming less transgressive and less dangerous to the establishment, and neighborhoods and venues are every day more heavily race and class-divided. &lt;/p&gt;
+&lt;p&gt;(Full disclosure: I work for the marketing team of a tech company in Manhattan.).&lt;/p&gt;
 </description>
     </item>
     <item>

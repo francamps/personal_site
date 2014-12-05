@@ -5,13 +5,13 @@ date: 2014-10-22
 template: article.jade
 ---
 
-I don't generally celebrate my birthday. Although I enjoy other people's parties, I feel self-conscious throwing a party myself, and don't tell anyone. Some people remember sometimes, and it's nice, but it tends to go quite unnoticed, which I'm totally ok with. I'm actually enjoying getting older, but throwing a party for myself doesn't feel representative of what I feel when ```myAge++```.
+I don't generally celebrate my birthday. Although I enjoy other people's parties, I feel self-conscious throwing a party for myself, and don't tell anyone. Some people remember sometimes, and it's nice, but it tends to go quite unnoticed, which I'm totally ok with. I'm actually enjoying getting older, but throwing a party for myself doesn't feel representative of what I feel when ```myAge++```.
 
-I do, however, tend to find meaning in rituals and I like stories, and since I'm turning 30 now, I've been telling people a bit more than normal.
+I do, however, tend to find meaning in rituals and I like stories, and since I'm turning 30 now, I've been telling people about it a bit more than normal.
 
-Also, I've had a blast in my 20s. They've been good with me, and I've been blessed to be able to go through all sorts of adventures and experiences, too many to enumerate here.
+Also, I've had a blast in my 20s. The decade has been really good with me, and I've been blessed with all sorts of adventures and experiences, too many to enumerate here.
 
-So instead of celebrating my 30th birthday, I felt like celebrating my 20s. And instead of celebrating by receiving a party, or by receiving presents, and since at this point I have people scattered all over the world, I decided to celebrate by doing a bit of a life inventory.
+So instead of celebrating my 30th birthday, I felt like celebrating my 20s. Instead of celebrating by receiving a party, or by receiving presents, and since at this point I have people scattered all over the world, I decided to celebrate by doing a bit of a life inventory.
 
 The idea was to go through a list of all the people who have impacted my life in one way or another, and send a letter giving thanks. It feels much more correct to celebrate by thanking people who've made my 20s happen than thanking myself for, huh, existing?
 

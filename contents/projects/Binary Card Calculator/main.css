@@ -1,0 +1,75 @@
+#main {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+h2 {
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 478px;
+	color: #232323;
+}
+
+h2#total:hover {
+	cursor: pointer;
+}
+
+#deck {
+	width: 920px;
+	height: 120px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	position: relative;
+	text-align: center;
+}
+
+.card_frame {
+	width: 90px;
+	float: left;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 38px;	
+	font-weight: bold;
+	letter-spacing: -3px;	
+}
+
+.card_frame h3 {
+	width: 100%;
+	clear: both;
+	margin: 10px 0px;
+	font-size: 22px;
+	color: #232323;
+}
+
+.card {
+	width: 70px;
+	height: 60px;
+	margin: 10px; 
+	float: left;
+	border-radius: 5px;
+	float: left;
+	padding-top: 35px;
+	border: solid 1px #232323;	
+}
+
+h2 {
+	margin: 50px 0px;
+	width: 100%;
+}
+
+.card:hover {
+	cursor: pointer;
+	border: solid 3px #e00580;
+	width: 66px;
+	height: 56px;
+}
+
+.card.black {
+	background-color: #232323;
+	color: #fcfcfc;
+}
+
+.card.white {
+	background-color: #fcfcfc;
+	color: #c0c0c0;	
+}

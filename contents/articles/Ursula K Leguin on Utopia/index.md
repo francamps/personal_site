@@ -1,7 +1,7 @@
 ---
 title: Ursula K Leguin on Utopia
 author: franc
-date: 2014-10-30
+date: 2014-10-28
 template: article.jade
 ---
 
@@ -31,7 +31,7 @@ _Milan Kundera_
 
 [Talking about _The Dispossessed_] "Anarchism rejects the identification of civilization with the state, and the identification of power with coercion; against the inherent violence of the _hot_ society it asserts the value of such antisocial behavior as the general refusal of women to bear arms in war; and other coyote devices." 
 
-[This is mine: What is she talking about? Women in anarchist movements are leaders and more fighters than in any other political movement. I must be misunderstanding what she meant with this paragraph.]
+[This is mine: What is she talking about? Women are more prominent leaders, as well as fighters, in anarchist movements than in any other political movement (see Spanish Revolution of 1936). I must be misunderstanding what she meant with this paragraph.]
 
 "They are assailed by too many new things ever to find the depths in the old before it has gone by. The rush of life past them they call progress, though it is too rapid for them to move with it. Man remains the same, baffled and astonished, with a heap of new things around him but gone before he knows them. Men may live many sorts of lives, and this they call _opportunity_,and believe opportunity good without ever examining any one of those lives to know if it is good. We have fewer ways of life and most of us never know but one." 
 _Lord Dorn_

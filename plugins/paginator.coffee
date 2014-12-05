@@ -4,11 +4,14 @@ module.exports = (env, callback) ->
       e.g. "paginator": {"perPage": 10} ###
   
   defaults =
-    template: 'nopatterns.jade' # template that renders pages
-    articles: 'articles' # directory containing contents to paginate
-    first: 'articles/index.html' # filename/url for first page
-    filename: 'articles/page/%d/index.html' # filename for rest of pages
-    perPage: 2 # number of articles per page
+    template: 'nopatterns.jade'                   # template that renders article archive
+    templateProjects: 'projects.jade'             # template that renders project archive
+    articles: 'articles'                          # directory containing contents to paginate
+    projects: 'projects'                          # directory containing contents to paginate
+    first: 'articles/index.html'                  # filename/url for first page
+    filename: 'articles/page/%d/index.html'       # filename for rest of pages
+    proj_filename: 'projects/page/%d/index.html'
+    perPage: 2                                    # number of articles per page
 
   # assign defaults any option not set in the config file
   options = env.config.paginator or {}
@@ -21,6 +24,12 @@ module.exports = (env, callback) ->
     articles = contents[options.articles]._.directories.map (item) -> item.index
     articles.sort (a, b) -> b.date - a.date
     return articles
+
+  getProjects = (contents) ->
+    # Returns a list of projects found in *contents*
+    projects = contents[options.projects]._.directories.map (item) -> item.index
+    projects.sort (a, b) -> b.date - a.date
+    return projects
 
   class PaginatorPage extends env.plugins.Page
     ### A page has a number and a list of articles ###
@@ -58,34 +67,47 @@ module.exports = (env, callback) ->
     # find all articles
     articles = getArticles contents
 
+    # find all projects
+    # projects = getProjects contents
+
     # populate pages
     numPages = Math.ceil articles.length / options.perPage
 
     pages = []
+    #projs = []
 
     #for i in [0...numPages]
       #pageArticles = articles#.slice i * options.perPage, (i + 1) * options.perPage
       #pages.push new PaginatorPage i + 1, pageArticles
     pages.push new PaginatorPage 0, articles  
+    #projs.push new PaginatorPage 0, projects
 
     # add references to prev/next to each page
     for page, i in pages
       page.prevPage = pages[i - 1]
       page.nextPage = pages[i + 1]
 
+    #for proj, i in projs
+    #  proj.prevPage = projs[i - 1]
+    #  proj.nextPage = projs[i + 1]
+
     # create the object that will be merged with the content tree (contents)
     # do _not_ modify the tree directly inside a generator, consider it read-only
-    rv = {pages:{}}
+    rv = { pages:{} }
+    #rvp = { projs:{} }
 
     #for page in pages
       #rv.pages["#{ page.pageNum }.page"] = page # file extension is arbitrary
     rv['index.page'] = pages[0] # alias for first page
+    #rvp['index_project.page'] = projs[0] # alias for first page
 
     # callback with the generated contents
     callback null, rv
 
   # add the article helper to the environment so we can use it later
   env.helpers.getArticles = getArticles
+
+  # env.helpers.getProject = getProjects
 
   # tell the plugin manager we are done
   callback()
