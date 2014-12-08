@@ -1,5 +1,5 @@
 ---
-title: Twitter Random Walk
+title: Inventional: an emotional inventory
 author: franc
 date: 2014-10-22
 template: project.jade

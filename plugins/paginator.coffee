@@ -5,12 +5,12 @@ module.exports = (env, callback) ->
   
   defaults =
     template: 'nopatterns.jade'                   # template that renders article archive
-    templateProjects: 'projects.jade'             # template that renders project archive
+    # templateProjects: 'projects.jade'             # template that renders project archive
     articles: 'articles'                          # directory containing contents to paginate
-    projects: 'projects'                          # directory containing contents to paginate
+    # projects: 'projects'                          # directory containing contents to paginate
     first: 'articles/index.html'                  # filename/url for first page
     filename: 'articles/page/%d/index.html'       # filename for rest of pages
-    proj_filename: 'projects/page/%d/index.html'
+    # proj_filename: 'projects/page/%d/index.html'
     perPage: 2                                    # number of articles per page
 
   # assign defaults any option not set in the config file
@@ -107,7 +107,7 @@ module.exports = (env, callback) ->
   # add the article helper to the environment so we can use it later
   env.helpers.getArticles = getArticles
 
-  # env.helpers.getProject = getProjects
+  #env.helpers.getProject = getProjects
 
   # tell the plugin manager we are done
   callback()

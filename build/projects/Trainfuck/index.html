@@ -29,20 +29,27 @@
         <article class="article">
           <section class="content"><p>Brainfuck is an esoteric programming language, used mostly for challenges and programming language design athletics. It is very minimalist, and superconfusing. Here’s ‘Hello World!’ in&nbsp;Brainfuck.</p>
 <pre><code>++++++++++[&gt;+++++++&gt;++++++++++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;++.&gt;+.+++++++..+++.&gt;++.&lt;&lt;+++++++++++++++.&gt;.+++.------.--------.&gt;+.&gt;.
-</code></pre><p>Trainfuck is an implementation of Brainfuck using the <span class="caps">MTA</span> subway&nbsp;system. </p>
-<p>&lt;    Move one station&nbsp;forward</p>
-<blockquote>
-<p>   Change directions, move one station&nbsp;backwards</p>
-<ul>
-<li>Take a selfie with a stranger with the name of the station behind you&nbsp;two</li>
-</ul>
-<ul>
-<li>Take a selfie by yourself with the name of the station behind you two
-[
-]
-.&nbsp;,</li>
-</ul>
-</blockquote>
+</code></pre><p>A Brainfuck program has an implicit byte pointer, free to move within array of 30k bytes, initially all set to 0. The language has a set of 8 commands, represented by the following&nbsp;characters.</p>
+<pre><code>&gt;     Increment the pointer.
+&lt;     Decrement the pointer.
++     Increment the byte at the pointer.
+-     Decrement the byte at the pointer.
+.     Output the byte at the pointer.
+,     Input a byte and store it in the byte at the pointer.
+[     Jump forward past the matching ] if the byte at the pointer is zero.
+]     Jump backward to the matching [ unless the byte at the pointer is zero.
+</code></pre><h3 id="a-manhattan-bound-trainfuck-is-approaching-the-station">A Manhattan-bound Trainfuck is approaching the&nbsp;station</h3>
+<p>Trainfuck is an implementation of Brainfuck using the <span class="caps">MTA</span> subway system. I’m looking for ways of implementing the language in a way that can be literally compiled and interpreted, but in the meantime I’m just setting the rules for some real world&nbsp;fun.</p>
+<p>In reality, it’s a different encoding of the Brainfuck&nbsp;commands. </p>
+<pre><code>&lt;    Move one station forward
+&gt;    Change directions, move one station backwards
++    Take a selfie with a stranger with the name of the station behind you two
+-    Take a selfie by yourself with the name of the station behind you
+[    Have a stranger record you spinning on yourself clockwise
+]     Have a stranger record you spinning on yourself counterclockwise
+.    Say out loud the value in the cell, with the name of the station behind you
+,    Undefined for now
+</code></pre><p>With this set of rules, I’m set to go write ‘Hello World!’ starting from the closest station to the School for Poetic Computation, on the Lower East&nbsp;Side.</p>
 </section>
         </article>
       </div>
