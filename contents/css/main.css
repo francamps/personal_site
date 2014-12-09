@@ -384,6 +384,30 @@ footer .nav-back a {
   text-decoration: none;
 }
 
+footer .social-footer { 
+  margin: 0 auto;
+  text-align: center;
+  width: 160px;
+  height: 72px;
+  clear: both;
+}
+
+.social-icon {
+  margin-top: 20px;  
+  margin-bottom: 20px;   
+  display: inline;
+  overflow: hidden;
+  float: left;
+  background-size: 64px 32px;
+  width: 32px !important;
+  height: 32px !important;
+  cursor: pointer;
+}
+
+.social-icon:hover{
+  background-position: -32px;
+}
+
 footer .about {
   padding: .5em 3em;
   width: 40%;
