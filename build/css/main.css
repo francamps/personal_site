@@ -289,6 +289,15 @@ li.nav-left a:hover{
   text-decoration: none;  
 }
 
+li.nav-left a {
+  padding: 2px;
+}
+
+li.nav-left.social a:hover{
+  background: none;
+  text-decoration: none;  
+}
+
 /* page header */
 
 p.description {

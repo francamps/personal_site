@@ -25,9 +25,11 @@ A clock (use processing sketch)
 
 Merge, fork, conflicts
 
-### What else can be version controlled (git day)
+### Day version control
 
 Day version control: commit your day, everyday
+
+### A blob / heat map projector for social events
 
 ### An open-source inventory of feelings and emotions
 

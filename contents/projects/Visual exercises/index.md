@@ -19,4 +19,8 @@ When thinking about emergence and collective intelligence, my quantitative self 
 
 I played around with a 3D model made for Cynder and ported it to openFrameworks. I'm not very satisfied with the animation itself, but it worked to help understand relations between individual elements of larger systems.
 
+![](swarm.png)
+
 ### Image synthesis
+
+![](imageSynth.png)

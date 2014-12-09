@@ -43,3 +43,5 @@ In reality, it's a different encoding of the Brainfuck commands.
 ```
 
 With this set of rules, I've started on 14th Street on the A line and followed the rules to print 'Hello World' as a proof of concept. 
+
+<div style="width: 500px; margin: 0 auto"><iframe src="//player.vimeo.com/video/113971587" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
