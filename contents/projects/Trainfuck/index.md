@@ -34,8 +34,8 @@ In reality, it's a different encoding of the Brainfuck commands.
 ```
 <	Move one station forward
 >	Change directions, move one station backwards
-+	Take a selfie with a stranger with the name of the station behind you two
--	Take a selfie by yourself with the name of the station behind you
++	Say 'plus' with yourself on screen, and yell it like a crazy person
+-	Say 'minus' without you on screen, and yell it like a crazy person
 [	Go out using the turning pole, come back in using the spinning door
 ] 	Go out using the spinning door, come back in using the turning pole
 .	Say out loud the value in the cell, with the name of the station behind you

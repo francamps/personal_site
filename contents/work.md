@@ -1,19 +1,15 @@
 ---
-title: Here's what I do
+title: Work
 author: Franc
 date: 2013-11-30
 template: article.jade
 ---
 
-I specialize in data analysis, visualization and visual storytelling.
+### Data Visualization, Analysis and UI
 
-I get really excited with social innovation and creative technology. 
+I specialize in the design and development of data visualization applications, visual storytelling and general communication. I get really excited with social innovation and creative technology. I have a crush for algorithms and their implementation in visual design.
 
-I have a crush for algorithms and their implementation in visual design.
-
-Here are some samples of stuff I've done. 
-
-*[Most of my daily work is not publicly shareable, so contact me for more examples or further explanations about my work.]*
+*[A good portion of my daily work is not publicly shareable. Contact me for more examples.]*
 
 <div id="work_wrap" class="content-wrap" style="min-height: 600px">
 	<div>
@@ -53,19 +49,23 @@ Here are some samples of stuff I've done.
 			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
 			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
 		</div>
-	</div>		
-		<!--h2>Digital art practice</h2>
-	<div>
-		<div class="work_tile">
-			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
-			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
-		</div>
-		<div class="work_tile">
-			<div class="work_tile_top" style="background-image: url('/css/images/machine.gif')"></div>
-			<div class="work_tile_bottom"><p><i>Touching the stars</i>, a touchscreen made of spandex to manually control visuals for events, proof of concept. With <a href="http://municipalvideoservice.com/">Matthew Keff</a>. (Kinect, openFrameworks).</p></div>
-		</div>
-	</div-->
+	</div>
 </div>
+
+### Digital and Net Art
+
+In parallel, I explore some art practice in the digital context. I like experimenting with repurposing some online communities, and trying to understand what makes collective intelligence and action emerge.
+
+All of these projects are investigations I worked on during the [School for Poetic Computation](http://sfpc.io) Fall 2014 session. SFPC is an artist-run school working at the intersections of code, design, hardware and theory — focusing especially on artistic intervention and based in New York City.
+
+* [A blog that travels the world on Craigslist looking for surprise and misunderstanding.](/projects/Traveling with Craigslist/index.html): When I started at SFPC and had no idea what I would be working on, I decided to at least write a lot about my thoughts and experiences. But after a few weeks, thinking about communities and repurposing of technologies and connection, I started posting anonymously in faraway and isolated sections on Craigslist’s boards around the world.
+* [A decade's inventory](/projects/A decade's inventory/index.html): The least computational of my projects was in fact not originally associated with SFPC and it was a personal endeavor in which I worked just on the side. At some point I realized that it was related to the idea of connection and biographies, some of the questions I’m exploring here too, so I decided to include it. 
+* [Twitter Random Walk](/projects/Twitter Random Walk/index.html): A twitter bot that unfollows twitter accounts and follows some of these accounts followees, slowly alienating my twitter experience by following strangers’ interests and breaking out of my filter bubble.
+* [Moop](/projects/Moop/index.html): Still a work in progress, I’m working on a pong game that will be played by as many people simultaneously as possible. It is designed as a homage to an experiment by Loren Carpenter in 1991 where 600 people in the real world played a pong game simultaneously.
+* [Binary Card Calculator](/projects/Binary Card Calculator/index.html): A simple binary card calculator, designed to support the Binary Card Games designed by Toru Urakawa, a game session for Silent Barn’s Poetic Science Fair on November 22nd.
+* [openFrameworks visual exercises](/projects/Visual exercises/index.html)
+* [Trainfuck](/projects/Trainfuck/index.html): An encoding or implementation of [Brainfuck](http://en.wikipedia.org/wiki/Brainfuck) in the physical world, using the MTA subway system. A proof of concept that is currently in the works as well (I’m currently editing).
+* [Backlog](/projects/Backlog/index.html)
 
 <script> 
 	(function() {

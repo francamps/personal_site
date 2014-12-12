@@ -10,7 +10,7 @@ block prepend title
 block header
   include author
   div.avatar-wrap.animated.fadeInUp
-    div.nav-logo-article(onclick="location.href='/index.html'")
+    div.nav-logo-article(onclick="location.href='/work.html'")
   h1.animated.fadeInUp= page.title
   p.author.animated.fadeInUp
     | #{ "Written by " }
@@ -22,18 +22,13 @@ block content
 
 block prepend footer
   div.nav-back
-    a(href='../../index.html') « Main
+    a(href='/work.html') « Main
   div.nav-back.social-footer
-    a(href="https://github.com/francamps")
-      img(src="/css/images/social/github.png" width="32px")
-    a(href="https://vimeo.com/franccampsfebrer")
-      img(src="/css/images/social/vimeo.png" width="32px")
-    a(href="http://www.twitter.com/francamps")
-      img(src="/css/images/social/twitter.png" width="32px")
-    a(href="https://www.linkedin.com/pub/franc-camps-febrer/12/209/860")
-      img(src="/css/images/social/linkedin.png" width="32px")
-    a(href="mailto:hi@franc.ly")
-      img(src="/css/images/social/mail.png" width="32px")
+    div.social-icon(onclick="location.href='https://github.com/francamps'" style="background-image:url('/css/images/social/github2.png')")
+    div.social-icon(onclick="location.href='https://vimeo.com/franccampsfebrer'" style="background-image:url('/css/images/social/vimeo2.png')")
+    div.social-icon(onclick="location.href='http://www.twitter.com/francamps'" style="background-image:url('/css/images/social/twitter2.png')")
+    div.social-icon(onclick="location.href='https://www.linkedin.com/pub/franc-camps-febrer/12/209/860'" style="background-image:url('/css/images/social/linkedin2.png')")
+    div.social-icon(onclick="location.href='mailto:hi@franc.ly'" style="background-image:url('/css/images/social/mail2.png')")
 
 block footer
   section.copy

@@ -1,34 +1,101 @@
-
 extends layout
-//- this logic should be moved to a view at some point
+
+block append vars
+  - bodyclass = 'article-detail'
+
+block prepend title
+  | #{ "Writings - " }
+
+block header
+  include author
+  div.avatar-wrap.animated.fadeInUp
+    div.nav-logo-article(onclick="location.href='/index.html'")
+  h1.animated.fadeInUp= "Writings"
+//  p.author.animated.fadeInUp
+//    | #{ "Written by Franc" }
+
+//block navigation
+//  header.nav-wrap.animated.fadeInUp
+//    div.nav-top
+//      div.nav-logo(onclick="location.href='/index.html'")
+//    div.nav-tagline
+//      h4 Franc.ly
+//      span.tagline Coder and storyteller
+//    nav
+//      li.nav-left
+//        a(id="about" href="/bio.html") Who
+//      li.nav-left
+//        a(id="about" href="/work.html") What        
+//      li.nav-left
+//        a(id="life_writing" href="/articles/page/0/index.html") Writing
+
+//block header
+//  div.logo
+//    h1= "Writing"
 
 block content
-	- var lineHeight = 2.2;
-	- var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
-	-	 return item.date.getFullYear()
-	- }).value()
-	- for (var archive in archives) {
-	-	archives[archive] = _.groupBy(archives[archive], function(item){return item.date.getMonth();})
-	- }
-	- var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-	section.archive
-		h2 Archive
-		ul
-			- var yearsK = _.chain(archives).keys().reverse().value()
-			- for(var year in yearsK)
-				- months = archives[yearsK[year]]
-				- var yearHeight = lineHeight * _.reduce(months, function(memo,month) { return memo + month.length; }, 0);
-				li
-					span.year-label(style='line-height:' + yearHeight+'em')=yearsK[year]
-					ul(style='margin-left:4em')
-						- var monthsK = _.chain(months).keys().reverse().value()
-						- for(month in monthsK){
-							- var monthHeight = lineHeight * months[monthsK[month]].length
-							li
-								span.month-label(style='line-height:'+monthHeight+'em')=month_names[monthsK[month]]
-								ul(style='margin-left:7em')
-									each item in months[monthsK[month]]
-										li(style='height:'+ lineHeight + 'em;line-height:'+ lineHeight + 'em;')
-											a(href=item.url)=item.title
-						- }
-						
+  - var lineHeight = 2.2;
+  - var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
+  -  return item.date.getFullYear()
+  - }).value()
+  - for (var archive in archives) {
+  - archives[archive] = _.groupBy(archives[archive], function(item){
+  - return item.date.getMonth();})
+  - }
+  - var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  section.archive
+    ul
+      - var yearsK = _.chain(archives).keys().reverse().value()
+      - for(var year in yearsK)
+        - months = archives[yearsK[year]]
+        - var yearHeight = lineHeight * _.reduce(months, function(memo,month) { return memo + month.length; }, 0);
+        li
+          span.year-label(style='line-height:' + yearHeight+'em')=yearsK[year]
+          ul(style='margin-left:4em')
+            - var monthsK = _.chain(months).keys().reverse().value()
+            - for(month in monthsK){
+              - var monthHeight = lineHeight * months[monthsK[month]].length
+              li
+                span.month-label(style='line-height:'+monthHeight+'em')=month_names[monthsK[month]]
+                ul(style='margin-left:7em')
+                  each item in months[monthsK[month]]
+                    li(style='height:'+ lineHeight + 'em;line-height:'+ lineHeight + 'em;')
+                      - var title = item.title
+                      //- if (item.title.length > 30)
+                        //- title = item.title.slice(0, 30) + "..."
+                      a(href=item.url)=title
+            - }            
+
+block prepend footer
+  div.nav-back
+    a(id="bio" href="/bio.html") Who
+    a(id="work" href="/work.html") What
+    a(id="writing" class="last-child" href="/articles/page/0/index.html") Writing    
+  div.nav-back.social-footer
+    div.social-icon(onclick="location.href='https://github.com/francamps'" style="background-image:url('/css/images/social/github2.png')")
+    div.social-icon(onclick="location.href='https://vimeo.com/franccampsfebrer'" style="background-image:url('/css/images/social/vimeo2.png')")
+    div.social-icon(onclick="location.href='http://www.twitter.com/francamps'" style="background-image:url('/css/images/social/twitter2.png')")
+    div.social-icon(onclick="location.href='https://www.linkedin.com/pub/franc-camps-febrer/12/209/860'" style="background-image:url('/css/images/social/linkedin2.png')")
+    div.social-icon(onclick="location.href='http://www.instagram.com/francamps'" style="background-image:url('/css/images/social/instagram.png')")
+    div.social-icon(onclick="location.href='http://www.soundcloud.com/lucidsi'" style="background-image:url('/css/images/social/soundcloud.png')")    
+    div.social-icon(onclick="location.href='mailto:hi@franc.ly'" style="background-image:url('/css/images/social/mail2.png')")
+
+block footer
+  section.copy
+    p #{ new Date().getFullYear() } by 
+      a(href='http://www.twitter.com/francamps') @francamps 
+      &mdash; powered by&nbsp;
+      a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+      //- please leave the "powered by" if you use the design       
+
+
+block wrapper
+  div#wrapper
+    block navigation
+    div.content-wrap
+      block header
+    div.content-wrap
+      block content
+  footer
+    div.content-wrap
+      block footer

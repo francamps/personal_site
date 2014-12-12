@@ -4,7 +4,7 @@ module.exports = (env, callback) ->
       e.g. "paginator": {"perPage": 10} ###
   
   defaults =
-    template: 'nopatterns.jade'                   # template that renders article archive
+    template: 'archive.jade'                   # template that renders article archive
     # templateProjects: 'projects.jade'             # template that renders project archive
     articles: 'articles'                          # directory containing contents to paginate
     # projects: 'projects'                          # directory containing contents to paginate
@@ -76,9 +76,6 @@ module.exports = (env, callback) ->
     pages = []
     #projs = []
 
-    #for i in [0...numPages]
-      #pageArticles = articles#.slice i * options.perPage, (i + 1) * options.perPage
-      #pages.push new PaginatorPage i + 1, pageArticles
     pages.push new PaginatorPage 0, articles  
     #projs.push new PaginatorPage 0, projects
 

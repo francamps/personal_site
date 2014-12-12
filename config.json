@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "http://www.franc.ly",
-    "name": "Stories about patterns",
+    "name": "Franc Camps-Febrer",
     "owner": "Franc Camps-Febrer",
-    "description": "Quantitative and qualitative storytelling"
+    "description": "Quantilitative storytelling"
   },
   "plugins": [
     "wintersmith-less",

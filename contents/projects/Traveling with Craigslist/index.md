@@ -10,7 +10,7 @@ template: project.jade
 <script type="text/javascript" src="./underscore.min.js"></script>
 <script type="text/javascript" src="./topojson.v0.min.js"></script>
 
-<div id="map" style="width: 500px"></div>
+<div id="map" style="width: 500px; margin: 0 auto"></div>
 
 For a month, I've been blogging in places around the world. Places that could feel abandoned, local and remote, or very alien to me. I wanted to talk to the least targeted audience, have a completely depersonalized experience. 
 
