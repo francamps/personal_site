@@ -7,7 +7,7 @@ template: article.jade
 
 ### Data Visualization, Analysis and UI
 
-I specialize in the design and development of data visualization applications, visual storytelling and general communication. I get really excited with social innovation and creative technology. I have a crush for algorithms and their implementation in visual design.
+I specialize in the design and development of data visualization applications, as well as general visual storytelling and communication. I get really excited with social innovation and creative technology. I have a crush for algorithms and their implementation in visual design.
 
 *[A good portion of my daily work is not publicly shareable. Contact me for more examples.]*
 
@@ -54,7 +54,7 @@ I specialize in the design and development of data visualization applications, v
 
 ### Digital and Net Art
 
-In parallel, I explore some art practice in the digital context. I like experimenting with repurposing some online communities, and trying to understand what makes collective intelligence and action emerge.
+In parallel, I explore digital contexts artistically. I like experimenting with repurposing some online communities, and trying to understand what makes collective intelligence and action emerge.
 
 All of these projects are investigations I worked on during the [School for Poetic Computation](http://sfpc.io) Fall 2014 session. SFPC is an artist-run school working at the intersections of code, design, hardware and theory — focusing especially on artistic intervention and based in New York City.
 

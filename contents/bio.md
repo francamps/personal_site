@@ -7,7 +7,9 @@ template: article.jade
 
 <div style="text-align: center"><img width="150px" height="150px" style="width: 150px !important; display: inline; border-radius: 10px; margin: 0 auto; margin-bottom: 2.8em" src="/css/images/thisguy.gif"/></div> 
 
-I'm Franc Camps-Febrer and I am a data visualization artist. I'm currently working for [@Knewton](http://www.twitter.com/knewton), the adaptive learning platform. I also do freelance work when I believe it'll make the world better. I am passionate about all things storytelling, and exploring combinations of formats to tell more powerful stories. I was born in Barcelona, and I am based in Brooklyn.
+I'm Franc Camps-Febrer and I am a data visualization engineer and digital artist. I was born in Barcelona, and I am based in Brooklyn.
+
+I'm currently working for [@Knewton](http://www.twitter.com/knewton), the adaptive learning platform. I also do freelance work when I believe it'll make the world better. I am passionate about all things storytelling, and exploring combinations of formats to tell more powerful stories. 
 
 I've worked as a bunch of different things, but most importantly as researcher, teacher, designer and developer. I've always done writing for various purposes. I earned a master degree in Developmental Neuroscience from CUNY in 2011, and focused my master's thesis on neuroaesthetics, synaesthesia and the emergence of creative thinking based on research work I collaborated with at NYU's Center for Neural Science. I also shot a documentary about it.
 

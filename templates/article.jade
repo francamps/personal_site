@@ -12,9 +12,9 @@ block header
   div.avatar-wrap.animated.fadeInUp
     div.nav-logo-article(onclick="location.href='/index.html'")
   h1.animated.fadeInUp= page.title  
-//  p.author.animated.fadeInUp
-//    | #{ "Written by " }
-//    mixin author(page.metadata.author)
+  p.author.animated.fadeInUp
+    | #{ "By " }
+    mixin author(page.metadata.author)
 
 block content
   article.article
